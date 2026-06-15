@@ -1,5 +1,10 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# Regras do Projeto Dexter Embreagens
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
+- **Sempre TypeScript.**
+- **Sempre Tailwind CSS** pra estilo (nada de estilo inline).
+- **Código comentado em português.**
+- **Tudo responsivo** (funciona bem no celular) e **acessível** (foco visível no teclado, contraste alto).
+- **Não inventar dados de cliente**; usar os exemplos do master prompt e marcar como "exemplo".
+- **Sem chaves expostas:** Sempre que precisar de uma chave de acesso (senha, token de API), use uma variável de ambiente com nome claro e deixe um arquivo `.env.example`.
+
+Este arquivo orienta os agentes ao trabalharem na base de código.

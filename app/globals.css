@@ -1,26 +1,48 @@
-@import "tailwindcss";
+@import "tailwindcss"; /* trigger rebuild */
+
+@theme {
+  --color-dexter-blue: #2746C9;
+  --color-dexter-red: #E2231A;
+  --color-dexter-dark: #0E1217;
+  --color-dexter-card: #161C24;
+  --color-dexter-text: #E7EBF0;
+  --color-dexter-alert: #FFB020;
+  
+  /* Light mode colors */
+  --color-dexter-light: #FFFFFF;
+  --color-dexter-light-bg: #F8FAFC;
+  --color-dexter-dark-text: #1E293B;
+  --color-dexter-muted-text: #64748B;
+  --color-dexter-border: #E2E8F0;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-condensed: var(--font-barlow-condensed), ui-sans-serif, system-ui, sans-serif;
+}
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: var(--color-dexter-light-bg);
+  --foreground: var(--color-dexter-dark-text);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Forcing Blog layout to bypass Tailwind cache bugs */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.blog-image-wrapper {
+  position: relative;
+  height: 15rem; /* Equivalent to h-60 */
+  width: 100%;
+  overflow: hidden;
 }
