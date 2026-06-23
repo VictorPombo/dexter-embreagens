@@ -43,6 +43,16 @@ export function Location() {
                 </div>
               </div>
             </div>
+
+            {/* Botão Uber */}
+            <a
+              href="https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[latitude]=-23.6062118&dropoff[longitude]=-46.5413159&dropoff[nickname]=Dexter%20Embreagens&dropoff[formatted_address]=Rua%20Flor%20da%20Lua%2C%2030%20-%20Altos%20da%20Vila%20Prudente%2C%20S%C3%A3o%20Paulo%2FSP"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-6 py-3 bg-black text-white font-bold rounded-xl hover:bg-slate-800 transition-colors shadow-lg mt-4"
+            >
+              🚚 Solicitar Retirada via Uber
+            </a>
           </div>
           
           <div className="h-[400px] w-full rounded-2xl overflow-hidden border border-slate-200 shadow-lg bg-slate-100">

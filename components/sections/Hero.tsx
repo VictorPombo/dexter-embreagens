@@ -43,14 +43,14 @@ export function Hero() {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-condensed font-bold uppercase leading-[1.1] tracking-tight">
             Embreagens <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/70">
-              Novas
+              Remanufaturadas
             </span> <br/>
-            Comercial
+            Para Pesados
           </h1>
           
           <p className="text-lg text-white/80 max-w-lg font-medium">
-            Especialistas em embreagens remanufaturadas para veículos pesados. 
-            A durabilidade e a confiança que a estrada exige.
+            Exclusivo para caminhões 🚛, ônibus 🚌 e guindastes 🏗️.<br/>
+            A força que o seu caminhão precisa — há mais de 20 anos.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
