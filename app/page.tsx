@@ -2,7 +2,7 @@ import { Header } from "@/components/sections/Header";
 import { Hero } from "@/components/sections/Hero";
 import { Differentials } from "@/components/sections/Differentials";
 import { VehicleSearch } from "@/components/sections/VehicleSearch";
-import { Diagnosis } from "@/components/sections/Diagnosis";
+import { AIAssistant } from "@/components/sections/AIAssistant";
 import { Products } from "@/components/sections/Products";
 import { B2B } from "@/components/sections/B2B";
 import { Blog } from "@/components/sections/Blog";
@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Differentials />
       <VehicleSearch />
-      <Diagnosis />
+      <AIAssistant />
       
       <div id="produtos">
         <Products />

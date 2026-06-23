@@ -116,8 +116,9 @@ export function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="#diagnostico" className="block py-4 border-b-2 border-transparent hover:border-dexter-red hover:text-dexter-red transition-all">
-                  DIAGNÓSTICO
+                <Link href="#assistente-ia" className="flex items-center gap-1.5 py-4 border-b-2 border-transparent hover:border-dexter-blue hover:text-dexter-blue transition-all">
+                  ASSISTENTE
+                  <span className="text-[10px] bg-dexter-blue text-white px-1.5 py-0.5 rounded-full font-bold leading-none">IA</span>
                 </Link>
               </li>
               <li className="relative group cursor-pointer">

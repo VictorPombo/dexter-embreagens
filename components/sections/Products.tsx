@@ -50,6 +50,7 @@ export function Products() {
                   src={item.image} 
                   alt={item.title} 
                   fill 
+                  sizes="(max-width: 768px) 100vw, 400px"
                   className="object-cover transition-transform duration-500 group-hover:scale-105 mix-blend-multiply"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-white via-white/40 md:via-white/10 to-transparent"></div>

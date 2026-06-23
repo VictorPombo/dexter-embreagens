@@ -76,6 +76,8 @@ export function Hero() {
               src="/images/clutch_part.png" 
               alt="Platô de Embreagem Dexter" 
               fill 
+              priority
+              sizes="(max-width: 768px) 100vw, 600px"
               className="object-cover hover:scale-105 transition-transform duration-700"
             />
           </div>
