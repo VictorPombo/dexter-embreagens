@@ -49,7 +49,7 @@ export function Hero() {
           </h1>
           
           <p className="text-lg text-white/80 max-w-lg font-medium">
-            Exclusivo para caminhões 🚛, ônibus 🚌 e guindastes 🏗️.<br/>
+            Exclusivo para caminhões, ônibus e guindastes.<br/>
             A força que o seu caminhão precisa — há mais de 20 anos.
           </p>
 

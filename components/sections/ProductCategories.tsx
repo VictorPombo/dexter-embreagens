@@ -1,21 +1,20 @@
 import { Container } from "@/components/ui/Container";
 import { PRODUCTS } from "@/lib/products";
-import { Layers, Circle, GitFork, Cylinder, Shield, ArrowRight } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
-/** Mapa de ícones por nome */
-const ICON_MAP: Record<string, LucideIcon> = {
-  Layers,
-  Circle,
-  GitFork,
-  Cylinder,
-  Shield,
+/** Mapa de imagens por slug do produto */
+const IMAGE_MAP: Record<string, string> = {
+  embreagens: "/images/produto-embreagens.png",
+  volantes: "/images/produto-volantes.png",
+  garfos: "/images/produto-garfos.png",
+  mancais: "/images/produto-mancais.png",
 };
 
-/** Produtos em destaque na Home (4 primeiros + garfos) */
+/** Produtos em destaque na Home (4 primeiros) */
 const FEATURED = PRODUCTS.filter((p) =>
-  ["embreagens", "volantes", "mancais", "garfos"].includes(p.slug)
+  ["embreagens", "volantes", "garfos", "mancais"].includes(p.slug)
 );
 
 export function ProductCategories() {
@@ -33,26 +32,34 @@ export function ProductCategories() {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
           {FEATURED.map((product) => {
-            const IconComponent = ICON_MAP[product.icon] || Layers;
+            const imageSrc = IMAGE_MAP[product.slug] || "/images/produto-embreagens.png";
             return (
               <Link
                 key={product.slug}
                 href={`/produtos/${product.slug}`}
-                className="group relative bg-white rounded-2xl border-2 border-slate-100 p-6 md:p-8 flex flex-col items-center text-center hover:border-dexter-red/30 hover:shadow-xl hover:shadow-dexter-red/5 hover:-translate-y-1 transition-all duration-300"
+                className="group relative bg-white rounded-2xl border-2 border-slate-100 overflow-hidden flex flex-col hover:border-dexter-red/30 hover:shadow-xl hover:shadow-dexter-red/5 hover:-translate-y-1 transition-all duration-300"
               >
-                {/* Ícone */}
-                <div className="w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center mb-5 group-hover:bg-dexter-red/10 group-hover:border-dexter-red/20 transition-colors">
-                  <IconComponent className="w-8 h-8 md:w-10 md:h-10 text-slate-400 group-hover:text-dexter-red transition-colors" />
+                {/* Imagem do produto */}
+                <div className="relative w-full aspect-square bg-slate-900 overflow-hidden">
+                  <Image
+                    src={imageSrc}
+                    alt={product.nome}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                  {/* Overlay gradiente */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                 </div>
 
-                {/* Nome */}
-                <h3 className="font-condensed font-bold text-sm md:text-lg uppercase text-slate-900 group-hover:text-dexter-red transition-colors leading-tight mb-3">
-                  {product.nome}
-                </h3>
-
-                {/* Seta */}
-                <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-dexter-red group-hover:text-white transition-colors text-slate-400 mt-auto">
-                  <ArrowRight className="w-4 h-4" />
+                {/* Nome + Seta */}
+                <div className="p-4 md:p-5 flex items-center justify-between">
+                  <h3 className="font-condensed font-bold text-sm md:text-base uppercase text-slate-900 group-hover:text-dexter-red transition-colors leading-tight">
+                    {product.nome}
+                  </h3>
+                  <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center group-hover:bg-dexter-red group-hover:text-white transition-colors text-slate-400 shrink-0 ml-2">
+                    <ArrowRight className="w-4 h-4" />
+                  </div>
                 </div>
               </Link>
             );

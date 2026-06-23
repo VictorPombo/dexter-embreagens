@@ -30,13 +30,13 @@ export function ClientSegments() {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-4 md:gap-6 max-w-5xl mx-auto">
           {SEGMENTOS_CLIENTES.map((seg) => {
             const IconComponent = ICON_MAP[seg.icon] || Truck;
             return (
               <div
                 key={seg.id}
-                className="group bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 flex flex-col items-center text-center hover:border-dexter-red/30 hover:bg-slate-800 transition-all"
+                className="group bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 flex flex-col items-center text-center hover:border-dexter-red/30 hover:bg-slate-800 transition-all w-[calc(50%-0.5rem)] sm:w-[calc(25%-1.125rem)]"
               >
                 <div className="w-14 h-14 rounded-xl bg-slate-700/50 flex items-center justify-center mb-4 group-hover:bg-dexter-red/10 transition-colors">
                   <IconComponent className="w-7 h-7 text-slate-400 group-hover:text-dexter-red transition-colors" />

@@ -88,10 +88,10 @@ function OptionCard({
       aria-pressed={isSelected}
       className={`
         group relative w-full text-left rounded-xl sm:rounded-2xl p-4 sm:p-5 border-2 transition-all duration-200
-        focus:outline-none focus:ring-2 focus:ring-dexter-blue focus:ring-offset-2 focus:ring-offset-slate-900
+        focus:outline-none focus:ring-2 focus:ring-dexter-red focus:ring-offset-2 focus:ring-offset-slate-900
         ${
           isSelected
-            ? "border-dexter-blue bg-dexter-blue/10 shadow-lg shadow-dexter-blue/10"
+            ? "border-dexter-red bg-dexter-red/10 shadow-lg shadow-dexter-red/10"
             : "border-slate-700 bg-slate-800/50 hover:border-slate-500 hover:bg-slate-800"
         }
       `}
@@ -101,7 +101,7 @@ function OptionCard({
           <div
             className={`
               w-10 h-10 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl flex items-center justify-center shrink-0 transition-colors
-              ${isSelected ? "bg-dexter-blue text-white" : "bg-slate-700 text-slate-400 group-hover:text-white"}
+              ${isSelected ? "bg-dexter-red text-white" : "bg-slate-700 text-slate-400 group-hover:text-white"}
             `}
           >
             <IconComponent className="w-5 h-5 sm:w-6 sm:h-6" />
@@ -120,7 +120,7 @@ function OptionCard({
         <div
           className={`
             w-6 h-6 rounded-full border-2 flex items-center justify-center shrink-0 mt-1 transition-all
-            ${isSelected ? "border-dexter-blue bg-dexter-blue" : "border-slate-600"}
+            ${isSelected ? "border-dexter-red bg-dexter-red" : "border-slate-600"}
           `}
         >
           {isSelected && (
@@ -225,7 +225,7 @@ export function AIAssistant() {
           }}
         />
         {/* Glow azul superior */}
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-dexter-blue/10 rounded-full blur-[120px]" />
+        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-dexter-red/10 rounded-full blur-[120px]" />
         {/* Glow vermelho inferior */}
         <div className="absolute -bottom-40 right-0 w-[400px] h-[300px] bg-dexter-red/5 rounded-full blur-[100px]" />
       </div>
@@ -234,13 +234,13 @@ export function AIAssistant() {
         <div className="max-w-4xl mx-auto">
           {/* Cabeçalho da seção */}
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-dexter-blue/10 border border-dexter-blue/20 text-dexter-blue text-xs sm:text-sm font-bold tracking-wide uppercase mb-4 sm:mb-6 ai-pulse">
+            <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 rounded-full bg-dexter-red/10 border border-dexter-red/20 text-dexter-red text-xs sm:text-sm font-bold tracking-wide uppercase mb-4 sm:mb-6 ai-pulse">
               <Bot className="w-4 h-4" />
               Assistente Inteligente
               <Sparkles className="w-4 h-4" />
             </div>
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-condensed font-bold uppercase text-white mb-3 sm:mb-4">
-              Diagnóstico <span className="text-dexter-blue">Assistido por IA</span>
+              Diagnóstico <span className="text-dexter-red">Assistido por IA</span>
             </h2>
             <p className="text-slate-400 text-sm sm:text-lg max-w-2xl mx-auto px-2 sm:px-0">
               Responda algumas perguntas rápidas sobre o problema do seu veículo e nossa inteligência artificial vai identificar a causa e sugerir as peças certas.
@@ -252,7 +252,7 @@ export function AIAssistant() {
             {/* Barra de progresso */}
             <div className="h-1.5 bg-slate-700/50 relative">
               <div
-                className="h-full bg-gradient-to-r from-dexter-blue to-blue-400 transition-all duration-500 ease-out rounded-r-full"
+                className="h-full bg-gradient-to-r from-dexter-red to-red-400 transition-all duration-500 ease-out rounded-r-full"
                 style={{ width: `${progressPct}%` }}
               />
             </div>
@@ -267,9 +267,9 @@ export function AIAssistant() {
                         w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-[10px] sm:text-xs font-bold transition-all
                         ${
                           idx < step
-                            ? "bg-dexter-blue text-white"
+                            ? "bg-dexter-red text-white"
                             : idx === step
-                              ? "bg-dexter-blue/20 text-dexter-blue border-2 border-dexter-blue"
+                              ? "bg-dexter-red/20 text-dexter-red border-2 border-dexter-red"
                               : "bg-slate-700 text-slate-500"
                         }
                       `}
@@ -290,7 +290,7 @@ export function AIAssistant() {
                       {label}
                     </span>
                     {idx < 3 && (
-                      <div className={`w-6 h-px ${idx < step ? "bg-dexter-blue" : "bg-slate-700"} hidden sm:block`} />
+                      <div className={`w-6 h-px ${idx < step ? "bg-dexter-red" : "bg-slate-700"} hidden sm:block`} />
                     )}
                   </div>
                 ))}
@@ -335,8 +335,8 @@ export function AIAssistant() {
                   <div className="space-y-8">
                     {/* Header do resultado */}
                     <div className="text-center">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-dexter-blue/10 border-2 border-dexter-blue/30 flex items-center justify-center mx-auto mb-4 sm:mb-6 ai-pulse">
-                        <ShieldCheck className="w-8 h-8 sm:w-10 sm:h-10 text-dexter-blue" />
+                      <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-dexter-red/10 border-2 border-dexter-red/30 flex items-center justify-center mx-auto mb-4 sm:mb-6 ai-pulse">
+                        <ShieldCheck className="w-8 h-8 sm:w-10 sm:h-10 text-dexter-red" />
                       </div>
                       <h3 className="text-2xl md:text-3xl font-condensed font-bold text-white uppercase mb-3">
                         {resultado.diagnostico}
@@ -352,7 +352,7 @@ export function AIAssistant() {
                       </div>
                       <p className="text-slate-300 mb-4 pl-8">{resultado.causa}</p>
                       <div className="flex items-start gap-3">
-                        <Clock className="w-5 h-5 text-dexter-blue shrink-0 mt-0.5" />
+                        <Clock className="w-5 h-5 text-dexter-red shrink-0 mt-0.5" />
                         <h4 className="font-bold text-white">Explicação</h4>
                       </div>
                       <p className="text-slate-400 text-sm mt-2 pl-8">{resultado.explicacao}</p>
@@ -361,14 +361,14 @@ export function AIAssistant() {
                     {/* Peças recomendadas */}
                     <div>
                       <h4 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                        <Sparkles className="w-5 h-5 text-dexter-blue" />
+                        <Sparkles className="w-5 h-5 text-dexter-red" />
                         Peças Recomendadas do Nosso Estoque
                       </h4>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         {resultado.pecas.map((peca) => (
                           <div
                             key={peca.id}
-                            className="bg-slate-800 rounded-xl p-4 sm:p-5 border border-slate-700 hover:border-dexter-blue/30 transition-colors"
+                            className="bg-slate-800 rounded-xl p-4 sm:p-5 border border-slate-700 hover:border-dexter-red/30 transition-colors"
                           >
                             <div className="flex items-start justify-between mb-2">
                               <h5 className="font-bold text-white text-sm">{peca.nome}</h5>
@@ -430,7 +430,7 @@ export function AIAssistant() {
                     size="lg"
                     onClick={goNext}
                     disabled={(step === 0 && !veiculo) || (step === 1 && !sintoma)}
-                    className="bg-dexter-blue text-white border-none hover:bg-dexter-blue/90 gap-2 font-bold disabled:opacity-40"
+                    className="bg-dexter-red text-white border-none hover:bg-dexter-red/90 gap-2 font-bold disabled:opacity-40"
                   >
                     Próximo
                     <ChevronRight className="w-5 h-5" />
@@ -440,7 +440,7 @@ export function AIAssistant() {
                     size="lg"
                     onClick={calcularResultado}
                     disabled={!detalhe}
-                    className="bg-dexter-blue text-white border-none hover:bg-dexter-blue/90 gap-2 font-bold disabled:opacity-40"
+                    className="bg-dexter-red text-white border-none hover:bg-dexter-red/90 gap-2 font-bold disabled:opacity-40"
                   >
                     Ver Diagnóstico
                     <Sparkles className="w-5 h-5" />
