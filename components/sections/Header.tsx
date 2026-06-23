@@ -152,9 +152,9 @@ export function Header() {
 
               {/* Assistente IA */}
               <li>
-                <Link href="/#assistente-ia" className="flex items-center gap-1.5 py-4 border-b-2 border-transparent hover:border-dexter-blue hover:text-dexter-blue transition-all">
+                <Link href="/#assistente-ia" className="flex items-center gap-1.5 py-4 border-b-2 border-transparent hover:border-dexter-red hover:text-dexter-red transition-all">
                   ASSISTENTE
-                  <span className="text-[10px] bg-dexter-blue text-white px-1.5 py-0.5 rounded-full font-bold leading-none">IA</span>
+                  <span className="text-[10px] bg-dexter-red text-white px-1.5 py-0.5 rounded-full font-bold leading-none">IA</span>
                 </Link>
               </li>
 
@@ -175,7 +175,7 @@ export function Header() {
 
       {/* 4. Mobile Menu Overlay */}
       {mobileOpen && (
-        <div className="fixed inset-0 top-[105px] bg-white z-50 overflow-y-auto md:hidden animate-in slide-in-from-top-2">
+        <div className="fixed inset-0 top-[65px] bg-white z-50 overflow-y-auto md:hidden animate-in slide-in-from-top-2">
           <nav className="px-4 py-4">
             <ul className="space-y-1">
               <MobileLink href="/" label="HOME" onClick={() => setMobileOpen(false)} />
@@ -219,7 +219,7 @@ export function Header() {
                   className="flex items-center gap-2 px-4 py-3 font-semibold text-slate-800 hover:bg-slate-50 rounded-lg transition-colors"
                 >
                   ASSISTENTE
-                  <span className="text-[10px] bg-dexter-blue text-white px-1.5 py-0.5 rounded-full font-bold leading-none">IA</span>
+                  <span className="text-[10px] bg-dexter-red text-white px-1.5 py-0.5 rounded-full font-bold leading-none">IA</span>
                 </Link>
               </li>
               <MobileLink href="/noticias" label="NOTÍCIAS" onClick={() => setMobileOpen(false)} />
