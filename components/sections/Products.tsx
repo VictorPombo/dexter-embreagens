@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/Container";
-import { Settings, RefreshCw, Layers, Shield } from "lucide-react";
+import { RefreshCw, Layers, Shield } from "lucide-react";
 import Image from "next/image";
 
 const products = [
@@ -11,15 +11,9 @@ const products = [
   },
   {
     title: "Serviço de Remanufatura",
-    description: "Traga sua peça usada. Fazemos a remanufatura com garantia de peça nova.",
+    description: "Traga sua peça usada. Fazemos a remanufatura com garantia de 06 meses.",
     icon: RefreshCw,
     image: "/images/reman_mechanic.png",
-  },
-  {
-    title: "Atuadores e Cilindros",
-    description: "Linha completa de cilindros mestre, auxiliar e atuadores hidráulicos.",
-    icon: Settings,
-    image: "/images/atuador_cilindro.png",
   },
   {
     title: "Mancal e Rolamento",

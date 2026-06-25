@@ -37,11 +37,11 @@ export const PRODUCTS: Product[] = [
     descricaoCompleta:
       "Nossas embreagens remanufaturadas passam por um rigoroso processo industrial que inclui desmontagem completa, inspeção dimensional, substituição de componentes desgastados e montagem com torque controlado. Cada conjunto sai da linha com as mesmas especificações da peça original, garantindo acoplamento perfeito, transmissão de torque eficiente e vida útil prolongada. Trabalhamos com discos de 350mm a 430mm, atendendo toda a linha de veículos pesados nacionais e importados.",
     especificacoes: [
-      "Discos de 350mm a 430mm",
+      "Discos e platôs de embreagem de 280mm até 430mm",
       "Compatível com câmbio manual e automatizado",
-      "Lonas de alta performance (cerâmica e orgânica)",
+      "Lonas de alta performance",
       "Platôs com molas calibradas em bancada",
-      "Garantia completa contra defeitos de fabricação",
+      "Garantia de 06 meses contra defeitos de fabricação",
     ],
     aplicacao:
       "Caminhões Volvo, Scania, Mercedes-Benz, DAF, Ford Cargo, VW Constellation, MAN e ônibus rodoviários/urbanos.",
@@ -56,14 +56,12 @@ export const PRODUCTS: Product[] = [
     descricaoCompleta:
       "O volante do motor é a superfície de contato direta com o disco de embreagem. Quando apresenta desgaste, empenamento ou pontos duros, causa trepidação, ruído e desgaste prematuro do conjunto. Na Dexter, realizamos a retífica com usinagem CNC, devolvendo a planicidade original da peça. Após a usinagem, cada volante passa por balanceamento dinâmico para eliminar vibrações. O resultado é uma superfície lisa, plana e perfeitamente equilibrada.",
     especificacoes: [
-      "Usinagem CNC com tolerância de 0,02mm",
       "Balanceamento dinâmico computadorizado",
       "Verificação de runout (batimento axial)",
-      "Compatível com volantes simples e dupla massa",
-      "Laudo técnico de medição incluso",
+      "Compatível com volantes simples",
     ],
     aplicacao:
-      "Todos os modelos de caminhões e ônibus com volante de embreagem convencional ou dupla massa.",
+      "Todos os modelos de caminhões e ônibus com volante de embreagem convencional.",
     imagem: "/images/clutch_part.png",
     icon: "Circle",
   },
@@ -85,25 +83,6 @@ export const PRODUCTS: Product[] = [
       "Mercedes-Benz Actros, Atego, Axor; Volvo FH, FM; Scania R, P; Ford Cargo; VW Constellation.",
     imagem: "/images/clutch_part.png",
     icon: "GitFork",
-  },
-  {
-    slug: "atuadores",
-    nome: "Atuadores",
-    descricaoCurta:
-      "Atuadores hidráulicos e cilindros mestre/auxiliar remanufaturados.",
-    descricaoCompleta:
-      "Os atuadores hidráulicos são responsáveis por converter a pressão do pedal em força mecânica sobre o platô. Quando apresentam vazamento ou perda de pressão, o pedal fica duro, a embreagem não desacopla completamente e as marchas travam. Na Dexter, remanufaturamos atuadores com troca total de vedações, retífica do cilindro interno e teste de pressão em bancada. Também trabalhamos com cilindros mestre e auxiliar (escravo) para completar o sistema hidráulico.",
-    especificacoes: [
-      "Vedações originais substituídas",
-      "Cilindro interno retificado",
-      "Teste de pressão em bancada (até 50 bar)",
-      "Inclui cilindro mestre e auxiliar",
-      "Compatível com sistemas concêntricos e externos",
-    ],
-    aplicacao:
-      "Toda a linha de veículos pesados com acionamento hidráulico de embreagem.",
-    imagem: "/images/atuador_cilindro.png",
-    icon: "Cylinder",
   },
   {
     slug: "mancais",
@@ -135,9 +114,9 @@ export const SERVICES: Service[] = [
     slug: "remanufatura",
     nome: "Serviço de Remanufatura",
     descricaoCurta:
-      "Traga sua peça usada. Fazemos a remanufatura completa com garantia de peça nova.",
+      "Traga sua peça usada. Fazemos a remanufatura completa com garantia de 06 meses.",
     descricaoCompleta:
-      "O serviço de remanufatura da Dexter transforma sua embreagem usada em uma peça com desempenho equivalente ao de uma nova. O processo é industrial, com controle de qualidade em cada etapa. Você traz a carcaça da peça antiga e nós devolvemos um produto pronto para rodar, com garantia completa. Isso significa economia de até 40% em relação a uma peça nova, sem abrir mão da qualidade e segurança.",
+      "O serviço de remanufatura da Dexter transforma sua embreagem usada em uma peça com desempenho equivalente ao de uma nova. O processo é industrial, com controle de qualidade em cada etapa. Você traz a carcaça da peça antiga e nós devolvemos um produto pronto para rodar, com garantia de 06 meses. Isso significa economia de até 40% em relação a uma peça nova, sem abrir mão da qualidade e segurança.",
     etapas: [
       {
         titulo: "1. Recebimento e Triagem",
@@ -167,7 +146,7 @@ export const SERVICES: Service[] = [
       {
         titulo: "6. Teste Final e Garantia",
         descricao:
-          "Teste de funcionamento simulando condições reais. Aprovada, a peça recebe selo de garantia Dexter.",
+          "Teste de funcionamento simulando condições reais. Aprovada, a peça recebe marcação de garantia Dexter.",
       },
     ],
     imagem: "/images/reman_mechanic.png",

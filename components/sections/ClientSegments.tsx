@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/Container";
-import { Truck, Building2, Wrench, SquareParking, FlaskConical, Package, Construction } from "lucide-react";
+import { Truck, Building2, Wrench, SquareParking, FlaskConical, Construction, Recycle, Mountain } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { SEGMENTOS_CLIENTES } from "@/lib/institutional";
 
@@ -10,8 +10,9 @@ const ICON_MAP: Record<string, LucideIcon> = {
   Wrench,
   SquareParking,
   FlaskConical,
-  Package,
   Crane: Construction,
+  Recycle,
+  Mountain,
 };
 
 export function ClientSegments() {
@@ -31,15 +32,25 @@ export function ClientSegments() {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 md:gap-6 max-w-5xl mx-auto">
-          {SEGMENTOS_CLIENTES.map((seg) => {
+          {SEGMENTOS_CLIENTES.map((seg, index) => {
             const IconComponent = ICON_MAP[seg.icon] || Truck;
+            /* Alterna entre vermelho e azul da paleta Dexter */
+            const isRed = index % 2 === 0;
             return (
               <div
                 key={seg.id}
                 className="group bg-slate-800/50 border border-slate-700/50 rounded-2xl p-6 flex flex-col items-center text-center hover:border-dexter-red/30 hover:bg-slate-800 transition-all w-[calc(50%-0.5rem)] sm:w-[calc(25%-1.125rem)]"
               >
-                <div className="w-14 h-14 rounded-xl bg-slate-700/50 flex items-center justify-center mb-4 group-hover:bg-dexter-red/10 transition-colors">
-                  <IconComponent className="w-7 h-7 text-slate-400 group-hover:text-dexter-red transition-colors" />
+                <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 transition-colors ${
+                  isRed 
+                    ? "bg-dexter-red/10 group-hover:bg-dexter-red/20" 
+                    : "bg-dexter-blue/10 group-hover:bg-dexter-blue/20"
+                }`}>
+                  <IconComponent className={`w-7 h-7 transition-colors ${
+                    isRed 
+                      ? "text-dexter-red" 
+                      : "text-dexter-blue"
+                  }`} />
                 </div>
                 <h3 className="text-sm font-bold text-white leading-tight">
                   {seg.nome}

@@ -6,21 +6,25 @@ const differentials = [
     icon: Clock,
     title: "+20 Anos de Mercado",
     description: "Tradição e confiança em cada peça.",
+    color: "bg-dexter-red/10 text-dexter-red",
   },
   {
     icon: Wrench,
-    title: "Remanufatura Premium",
+    title: "Remanufatura",
     description: "Recuperação com qualidade de nova.",
+    color: "bg-dexter-blue/10 text-dexter-blue",
   },
   {
     icon: ShieldCheck,
-    title: "Garantia Total",
-    description: "Cobertura completa contra defeitos.",
+    title: "Garantia",
+    description: "06 meses de garantia em nossas peças.",
+    color: "bg-dexter-red/10 text-dexter-red",
   },
   {
     icon: Truck,
     title: "Pronta Entrega",
     description: "Agilidade para seu caminhão não parar.",
+    color: "bg-dexter-blue/10 text-dexter-blue",
   },
 ];
 
@@ -31,7 +35,7 @@ export function Differentials() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {differentials.map((item, index) => (
             <div key={index} className="flex flex-col items-center text-center space-y-4 p-4 rounded-xl hover:bg-slate-50 transition-colors">
-              <div className="w-16 h-16 rounded-full bg-dexter-blue/10 flex items-center justify-center text-dexter-blue">
+              <div className={`w-16 h-16 rounded-full ${item.color} flex items-center justify-center`}>
                 <item.icon className="w-8 h-8" />
               </div>
               <div>

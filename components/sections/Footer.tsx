@@ -18,9 +18,9 @@ export function Footer() {
               <Image
                 src="/logo-sem-fundo.png"
                 alt="Dexter Embreagens"
-                width={200}
-                height={80}
-                className="h-16 w-auto object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all brightness-0 invert"
+                width={280}
+                height={100}
+                className="h-24 w-auto object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all brightness-0 invert"
               />
             </Link>
             <p className="text-slate-400 max-w-sm mb-6">

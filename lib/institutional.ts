@@ -24,7 +24,7 @@ export const INSTITUCIONAL = {
   visao: {
     titulo: "Visão",
     texto:
-      "Ser a referência nacional em remanufatura de embreagens para o segmento de pesados, reconhecida pela qualidade técnica, agilidade no atendimento e compromisso com a satisfação do cliente.",
+      "Continuar como referência em remanufatura de embreagens para o segmento de pesados, reconhecida pela qualidade técnica, agilidade no atendimento e compromisso com a satisfação do cliente.",
   },
 
   valores: [
@@ -95,13 +95,18 @@ export const SEGMENTOS_CLIENTES = [
     icon: "FlaskConical",
   },
   {
-    id: "logistica",
-    nome: "Empresas de Logística",
-    icon: "Package",
-  },
-  {
     id: "guindastes",
     nome: "Operadores de Guindastes",
     icon: "Crane",
+  },
+  {
+    id: "reciclagem",
+    nome: "Empresas de Reciclagem Urbana",
+    icon: "Recycle",
+  },
+  {
+    id: "mineradoras",
+    nome: "Mineradoras",
+    icon: "Mountain",
   },
 ];

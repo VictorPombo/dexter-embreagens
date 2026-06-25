@@ -1,6 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { PRODUCTS } from "@/lib/products";
-import { Layers, Circle, GitFork, Cylinder, Shield, ArrowRight } from "lucide-react";
+import { Layers, Circle, GitFork, Shield, ArrowRight } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Embreagens remanufaturadas, volantes, garfos, atuadores e mancais para caminhões, ônibus e guindastes.",
 };
 
-const ICON_MAP: Record<string, LucideIcon> = { Layers, Circle, GitFork, Cylinder, Shield };
+const ICON_MAP: Record<string, LucideIcon> = { Layers, Circle, GitFork, Shield };
 
 export default function ProdutosPage() {
   return (

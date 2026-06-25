@@ -36,9 +36,8 @@ export function Location() {
                 <div>
                   <h4 className="font-bold text-slate-900 text-lg">Horário de Atendimento</h4>
                   <p className="text-slate-600">
-                    Segunda a Sexta: 09:00 às 17:00<br />
-                    Sábado: 09:00 às 17:00<br />
-                    <span className="text-sm italic">Almoço: 12:00 às 13:00</span>
+                    Segunda a Sexta: 7:30 às 16:30<br />
+                    Sábado: 8:00 às 15:00
                   </p>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { MessageCircle, Search } from "lucide-react";
+import { MessageCircle } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
@@ -45,7 +45,7 @@ export function Hero() {
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/70">
               Remanufaturadas
             </span> <br/>
-            Para Pesados
+            Para Veículos Pesados
           </h1>
           
           <p className="text-lg text-white/80 max-w-lg font-medium">
@@ -58,12 +58,6 @@ export function Hero() {
               <Button size="lg" className="w-full sm:w-auto gap-2 bg-[#E2231A] hover:bg-red-700 text-white border-none shadow-lg">
                 <MessageCircle className="w-5 h-5" />
                 Saiba Mais
-              </Button>
-            </a>
-            <a href="#consulta">
-              <Button size="lg" className="w-full sm:w-auto gap-2 bg-transparent text-white border border-white/30 hover:bg-white/10 shadow-sm">
-                <Search className="w-5 h-5" />
-                Consultar Aplicação
               </Button>
             </a>
           </div>

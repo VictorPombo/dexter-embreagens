@@ -27,9 +27,9 @@ export function Header() {
             <Image 
               src="/logo-sem-fundo.png" 
               alt="Dexter Embreagens" 
-              width={260} 
-              height={90} 
-              className="h-20 w-auto object-contain"
+              width={320} 
+              height={110} 
+              className="h-24 w-auto object-contain"
               priority
             />
           </Link>
@@ -54,7 +54,7 @@ export function Header() {
             <div className="flex items-center gap-3 border-l border-slate-200 pl-8">
               <div>
                 <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-0.5">Atendimento</h4>
-                <p className="text-[12px] text-slate-400">Seg-Sex - 09h às 17h<br/>Sáb - 09h às 17h</p>
+                <p className="text-[12px] text-slate-400">Seg-Sex: 7:30h às 16:30h<br/>Sáb: 8:00h às 15:00h</p>
               </div>
               <Clock className="w-8 h-8 text-slate-400 stroke-1" />
             </div>
@@ -69,9 +69,9 @@ export function Header() {
             <Image 
               src="/logo-sem-fundo.png" 
               alt="Dexter Embreagens" 
-              width={180} 
-              height={65} 
-              className="h-12 w-auto object-contain"
+              width={220} 
+              height={80} 
+              className="h-14 w-auto object-contain"
               priority
             />
           </Link>
@@ -150,13 +150,6 @@ export function Header() {
                 </Link>
               </li>
 
-              {/* Assistente IA */}
-              <li>
-                <Link href="/#assistente-ia" className="flex items-center gap-1.5 py-4 border-b-2 border-transparent hover:border-dexter-red hover:text-dexter-red transition-all">
-                  ASSISTENTE
-                  <span className="text-[10px] bg-dexter-red text-white px-1.5 py-0.5 rounded-full font-bold leading-none">IA</span>
-                </Link>
-              </li>
 
               <li>
                 <Link href="/noticias" className="block py-4 border-b-2 border-transparent hover:border-dexter-red hover:text-dexter-red transition-all">
@@ -212,16 +205,6 @@ export function Header() {
 
               <MobileLink href="/servicos" label="SERVIÇOS" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/catalogos" label="CATÁLOGOS" onClick={() => setMobileOpen(false)} />
-              <li>
-                <Link
-                  href="/#assistente-ia"
-                  onClick={() => setMobileOpen(false)}
-                  className="flex items-center gap-2 px-4 py-3 font-semibold text-slate-800 hover:bg-slate-50 rounded-lg transition-colors"
-                >
-                  ASSISTENTE
-                  <span className="text-[10px] bg-dexter-red text-white px-1.5 py-0.5 rounded-full font-bold leading-none">IA</span>
-                </Link>
-              </li>
               <MobileLink href="/noticias" label="NOTÍCIAS" onClick={() => setMobileOpen(false)} />
               <MobileLink href="/contato" label="CONTATO" onClick={() => setMobileOpen(false)} />
             </ul>
@@ -234,7 +217,7 @@ export function Header() {
               </div>
               <div className="flex items-center gap-2">
                 <Clock className="w-4 h-4" />
-                <span>Seg-Sex: 09h às 17h</span>
+                <span>Seg-Sex: 7:30h às 16:30h</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4" />
