@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState } from "react";
@@ -5,12 +6,12 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Search, ChevronRight, MessageCircle, Truck } from "lucide-react";
 
-// Mock data based on the master prompt
+// Dados de exemplo — apenas modelos, sem menção a marcas
 const VEICULOS = [
-  { id: 1, marca: "Volvo", modelo: "FH 460 I-Shift", peca: "Conjunto de Embreagem 430mm", codigo: "DX-430-VOLVO" },
-  { id: 2, marca: "Ford", modelo: "Cargo 2628/2629", peca: "Kit Embreagem Completo", codigo: "DX-395-FORD" },
-  { id: 3, marca: "Mercedes-Benz", modelo: "Actros 2651", peca: "Conjunto Embreagem Automatizada", codigo: "DX-430-MB" },
-  { id: 4, marca: "Mercedes-Benz", modelo: "Atego 2426", peca: "Kit Embreagem 395mm", codigo: "DX-395-MB" },
+  { id: 1, modelo: "FH 460 I-Shift", peca: "Conjunto de Embreagem 430mm", codigo: "DX-430-01" },
+  { id: 2, modelo: "Cargo 2628/2629", peca: "Kit Embreagem Completo", codigo: "DX-395-02" },
+  { id: 3, modelo: "Actros 2651", peca: "Conjunto Embreagem Automatizada", codigo: "DX-430-03" },
+  { id: 4, modelo: "Atego 2426", peca: "Kit Embreagem 395mm", codigo: "DX-395-04" },
 ];
 
 export function VehicleSearch() {
@@ -28,7 +29,7 @@ export function VehicleSearch() {
     }
 
     const filtered = VEICULOS.filter(
-      v => v.marca.toLowerCase().includes(term) || v.modelo.toLowerCase().includes(term) || v.codigo.toLowerCase().includes(term)
+      v => v.modelo.toLowerCase().includes(term) || v.codigo.toLowerCase().includes(term) || v.peca.toLowerCase().includes(term)
     );
     setResults(filtered);
   };
@@ -67,7 +68,7 @@ export function VehicleSearch() {
                 type="text"
                 value={searchTerm}
                 onChange={handleSearch}
-                placeholder="Ex: Volvo FH, Scania R440 ou código da peça..."
+                placeholder="Ex: FH 460, Actros, Cargo ou código da peça..."
                 className="block w-full pl-16 pr-6 py-6 text-xl bg-slate-50 border-2 border-slate-100 rounded-2xl text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-0 focus:border-dexter-red transition-colors shadow-inner"
               />
               <div className="absolute inset-y-2 right-2">
@@ -99,19 +100,19 @@ export function VehicleSearch() {
                       <div className="pl-2">
                         <div className="flex justify-between items-start mb-3">
                           <span className="px-3 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-bold uppercase tracking-wider">
-                            {item.marca}
+                            {item.modelo}
                           </span>
                           <span className="text-xs font-mono font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded">
                             Cód: {item.codigo}
                           </span>
                         </div>
                         
-                        <h4 className="font-bold text-xl text-slate-900 mb-1">{item.modelo}</h4>
-                        <p className="text-slate-600 font-medium text-sm mb-6">{item.peca}</p>
+                        <h4 className="font-bold text-xl text-slate-900 mb-1">{item.peca}</h4>
+                        <p className="text-slate-600 font-medium text-sm mb-6">Modelo: {item.modelo}</p>
                       </div>
                       
                       <a 
-                        href={getWaLink(item.peca, `${item.marca} ${item.modelo}`, item.codigo)} 
+                        href={getWaLink(item.peca, item.modelo, item.codigo)} 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="w-full block pl-2"

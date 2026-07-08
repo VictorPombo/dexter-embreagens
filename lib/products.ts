@@ -44,7 +44,7 @@ export const PRODUCTS: Product[] = [
       "Garantia de 06 meses contra defeitos de fabricação",
     ],
     aplicacao:
-      "Caminhões Volvo, Scania, Mercedes-Benz, DAF, Ford Cargo, VW Constellation, MAN e ônibus rodoviários/urbanos.",
+      "Caminhões das principais linhas pesadas: FH, FM, R, P, Actros, Atego, Axor, Cargo, Constellation e ônibus rodoviários/urbanos.",
     imagem: "/images/clutch_part.png",
     icon: "Layers",
   },
@@ -80,7 +80,7 @@ export const PRODUCTS: Product[] = [
       "Disponível novo e remanufaturado",
     ],
     aplicacao:
-      "Mercedes-Benz Actros, Atego, Axor; Volvo FH, FM; Scania R, P; Ford Cargo; VW Constellation.",
+      "Actros, Atego, Axor, FH, FM, R, P, Cargo, Constellation e demais modelos de linha pesada.",
     imagem: "/images/clutch_part.png",
     icon: "GitFork",
   },
