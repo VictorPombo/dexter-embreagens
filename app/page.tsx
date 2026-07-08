@@ -1,4 +1,5 @@
 import { Hero } from "@/components/sections/Hero";
+import { TruckBrands } from "@/components/sections/TruckBrands";
 import { Differentials } from "@/components/sections/Differentials";
 import { ProductCategories } from "@/components/sections/ProductCategories";
 import { ClientSegments } from "@/components/sections/ClientSegments";
@@ -9,6 +10,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <TruckBrands />
       <Differentials />
       <ProductCategories />
       <ClientSegments />
