@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/Container";
 import { Truck, Building2, Wrench, SquareParking, FlaskConical, Construction, Recycle, Mountain } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { SEGMENTOS_CLIENTES } from "@/lib/institutional";
+import Image from "next/image";
 
 /** Mapa de ícones por nome */
 const ICON_MAP: Record<string, LucideIcon> = {
@@ -18,6 +19,17 @@ const ICON_MAP: Record<string, LucideIcon> = {
 export function ClientSegments() {
   return (
     <section className="py-20 bg-slate-900 relative overflow-hidden">
+      {/* Imagem de fundo — foto real dos discos de embreagem */}
+      <Image
+        src="/images/plato-remanufaturado-novo.jpg"
+        alt=""
+        fill
+        className="object-cover opacity-15"
+        sizes="100vw"
+        aria-hidden="true"
+      />
+      {/* Overlay escuro para garantir legibilidade */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/80 via-slate-900/70 to-slate-900/90" />
       {/* Glow decorativo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-dexter-red/5 rounded-full blur-[120px] pointer-events-none" />
 

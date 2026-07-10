@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Caminhões das principais linhas pesadas: FH, FM, R, P, Actros, Atego, Axor, Cargo, Constellation e ônibus rodoviários/urbanos.",
-    imagem: "/images/clutch_part.png",
+    imagem: "/images/disco-embreagem-remanufaturada-novo.jpg",
     icon: "Layers",
   },
   {
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Todos os modelos de caminhões e ônibus com volante de embreagem convencional.",
-    imagem: "/images/clutch_part.png",
+    imagem: "/images/volante-embreagem-01.jpg",
     icon: "Circle",
   },
   {
@@ -81,7 +81,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Actros, Atego, Axor, FH, FM, R, P, Cargo, Constellation e demais modelos de linha pesada.",
-    imagem: "/images/clutch_part.png",
+    imagem: "/images/garfo-embreagem-01.jpg",
     icon: "GitFork",
   },
   {
@@ -100,7 +100,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Caminhões, ônibus e guindastes de todas as marcas com embreagem mecânica ou hidráulica.",
-    imagem: "/images/mancal_rolamento.png",
+    imagem: "/images/mancal-rolamento-01.jpg",
     icon: "Shield",
   },
 ];
@@ -149,7 +149,7 @@ export const SERVICES: Service[] = [
           "Teste de funcionamento simulando condições reais. Aprovada, a peça recebe marcação de garantia Dexter.",
       },
     ],
-    imagem: "/images/reman_mechanic.png",
+    imagem: "/images/discos-embreagem-servico.jpg",
     icon: "RefreshCw",
   },
 ];

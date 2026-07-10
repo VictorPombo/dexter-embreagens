@@ -10,6 +10,22 @@ export const metadata: Metadata = {
 
 const ARTICLES = [
   {
+    id: 4,
+    title: "Dexter Embreagens na Fenatran 2024",
+    excerpt: "A Dexter marcou presença na Fenatran 2024, a maior feira de transporte e logística da América Latina. Visitamos os estandes das principais montadoras e reforçamos nosso compromisso com o setor de pesados.",
+    date: "Novembro 2024",
+    image: "/images/fenatran-2024-capa.jpg",
+    category: "Eventos",
+  },
+  {
+    id: 5,
+    title: "Dexter Embreagens patrocina o Lendas Camp",
+    excerpt: "Fomos patrocinadores do Lendas Camp, projeto social que reúne crianças com estrelas do futebol brasileiro como Craque Neto, Velloso, Muller e outros. Orgulho de apoiar essa iniciativa.",
+    date: "2024",
+    image: "/images/lendas-camp-capa.jpg",
+    category: "Patrocínio",
+  },
+  {
     id: 1,
     title: "A Importância da Manutenção Preventiva em Embreagens Pesadas",
     excerpt: "Saiba como evitar que o seu caminhão fique parado na estrada por problemas que poderiam ser identificados nas revisões periódicas.",

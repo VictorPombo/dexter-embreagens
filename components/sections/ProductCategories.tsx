@@ -6,10 +6,10 @@ import Link from "next/link";
 
 /** Mapa de imagens por slug do produto */
 const IMAGE_MAP: Record<string, string> = {
-  embreagens: "/images/produto-embreagens.png",
-  volantes: "/images/produto-volantes.png",
-  garfos: "/images/produto-garfos.png",
-  mancais: "/images/produto-mancais.png",
+  embreagens: "/images/disco-embreagem-remanufaturada.jpg",
+  volantes: "/images/volante-embreagem-01.jpg",
+  garfos: "/images/garfo-embreagem-01.jpg",
+  mancais: "/images/mancal-rolamento-01.jpg",
 };
 
 /** Produtos em destaque na Home (4 primeiros) */

@@ -12,7 +12,7 @@ export const INSTITUCIONAL = {
       "Nossa operação é focada exclusivamente no segmento de pesados — não trabalhamos com veículos de passeio. Essa especialização nos permite dominar cada detalhe técnico das embreagens que remanufaturamos, desde a seleção de materiais até a calibração final em bancada.",
       "Estamos localizados em São Paulo, com estrutura própria para atender transportadoras, oficinas mecânicas, frotistas e operadores de guindastes em todo o Brasil. Nosso compromisso é manter seu veículo rodando com segurança e economia.",
     ],
-    imagem: "/images/reman_mechanic.png",
+    imagem: "/images/fachada-dexter-editada.png",
   },
 
   missao: {

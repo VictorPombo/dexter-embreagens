@@ -14,9 +14,18 @@ export default function ADexterPage() {
 
   return (
     <>
-      {/* Hero Institucional */}
+      {/* Hero Institucional — com foto real da fachada */}
       <section className="bg-slate-900 py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-slate-900/80" />
+        {/* Foto da fachada da Dexter como background */}
+        <Image
+          src="/images/fachada-dexter-editada.png"
+          alt="Fachada da Dexter Embreagens"
+          fill
+          className="object-cover opacity-30"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-900/60" />
         <Container className="relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-condensed font-bold uppercase text-white mb-4">
