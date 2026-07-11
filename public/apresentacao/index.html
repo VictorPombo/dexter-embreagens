@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apresentação — Dexter Embreagens | 10/07/2026</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+    }
+
+    /* Cada "slide" ocupa uma página inteira ao imprimir */
+    .slide {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 4rem;
+      page-break-after: always;
+      position: relative;
+    }
+
+    .slide::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+      right: 5%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #e11d48, transparent);
+    }
+
+    /* Slide de capa */
+    .slide-cover {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      text-align: center;
+    }
+
+    .slide-cover h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .slide-cover h1 span { color: #e11d48; }
+
+    .slide-cover .subtitle {
+      font-size: 1.3rem;
+      color: #94a3b8;
+      margin-bottom: 2rem;
+    }
+
+    .slide-cover .date {
+      display: inline-block;
+      background: #e11d48;
+      color: white;
+      padding: 0.5rem 1.5rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    .slide-cover .logo {
+      width: 180px;
+      margin-bottom: 2rem;
+    }
+
+    /* Slides de conteúdo */
+    .slide-content {
+      background: #0f172a;
+    }
+
+    .slide-content h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+      text-align: center;
+    }
+
+    .slide-content h2 span { color: #e11d48; }
+
+    .slide-content .description {
+      color: #94a3b8;
+      font-size: 1rem;
+      text-align: center;
+      max-width: 700px;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .screenshot {
+      width: 100%;
+      max-width: 1100px;
+      border-radius: 12px;
+      border: 2px solid #1e293b;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e11d48;
+      color: white;
+      padding: 0.3rem 1rem;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1rem;
+    }
+
+    .badge-green {
+      background: #16a34a;
+    }
+
+    /* Slide de resumo */
+    .slide-summary {
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      max-width: 800px;
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    .summary-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+
+    .summary-card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #e11d48;
+      margin-bottom: 0.5rem;
+    }
+
+    .summary-card p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .summary-card .number {
+      font-size: 2rem;
+      font-weight: 900;
+      color: #e11d48;
+      margin-bottom: 0.25rem;
+    }
+
+    /* Print styles */
+    @media print {
+      body { background: white; color: #0f172a; }
+      .slide { padding: 2rem; }
+      .slide::after { background: linear-gradient(90deg, transparent, #e11d48, transparent); }
+      .slide-cover, .slide-content, .slide-summary { background: white; }
+      .slide-cover h1, .slide-content h2 { color: #0f172a; }
+      .slide-cover .subtitle, .slide-content .description, .summary-card p { color: #64748b; }
+      .summary-card { background: #f8fafc; border-color: #e2e8f0; }
+      .screenshot { border-color: #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1: Capa -->
+  <div class="slide slide-cover">
+    <img src="/apresentacao/01-hero.png" alt="Logo Dexter" class="logo" style="width:120px; border-radius:8px; opacity:0.3; position:absolute; top:2rem; left:2rem;" />
+    <h1>Dexter <span>Embreagens</span></h1>
+    <p class="subtitle">Relatório de Atualizações do Site — Todas as mudanças realizadas</p>
+    <span class="date">10 de Julho de 2026</span>
+  </div>
+
+  <!-- SLIDE 2: Resumo -->
+  <div class="slide slide-summary">
+    <h2>Resumo das <span>Alterações</span></h2>
+    <p class="description">
+      Todas as atualizações realizadas no site da Dexter Embreagens conforme solicitado pelo Carlos Henrique.
+    </p>
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="number">20+</div>
+        <h3>Fotos Reais Integradas</h3>
+        <p>Fotos de produtos, fachada, eventos e peças enviadas pelo cliente substituíram as imagens genéricas.</p>
+      </div>
+      <div class="summary-card">
+        <div class="number">7</div>
+        <h3>Páginas Atualizadas</h3>
+        <p>Home, A Dexter, Produtos (4 categorias), Serviços e Notícias receberam atualizações visuais.</p>
+      </div>
+      <div class="summary-card">
+        <div class="number">2</div>
+        <h3>Notícias Adicionadas</h3>
+        <p>Fenatran 2024 e patrocínio do Lendas Camp com fotos reais dos eventos.</p>
+      </div>
+      <div class="summary-card">
+        <div class="number">1</div>
+        <h3>Seção Nova</h3>
+        <p>Seção "Antes e Depois" na página de Serviços com comparação real de remanufatura.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 3: Hero da Home -->
+  <div class="slide slide-content">
+    <span class="badge">Página Inicial</span>
+    <h2>Hero — <span>Home</span></h2>
+    <p class="description">
+      Banner principal com a identidade visual da Dexter: caminhão Volvo, embreagem e telefone de contato.
+    </p>
+    <img src="/apresentacao/01-hero.png" alt="Hero da Home" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 4: Nossos Produtos na Home -->
+  <div class="slide slide-content">
+    <span class="badge">Página Inicial</span>
+    <h2>Nossos <span>Produtos</span></h2>
+    <p class="description">
+      Cards de produtos na homepage agora exibem fotos reais das peças: disco de embreagem, volante, garfo e mancal.
+    </p>
+    <img src="/apresentacao/04-produtos-home.png" alt="Produtos na Home" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 5: Segmentos Atendidos -->
+  <div class="slide slide-content">
+    <span class="badge">Página Inicial</span>
+    <h2>Segmentos <span>Atendidos</span></h2>
+    <p class="description">
+      Seção com fundo atualizado usando a foto do platô SACHS remanufaturado (foto 16), conforme solicitado.
+    </p>
+    <img src="/apresentacao/09-segmentos.png" alt="Segmentos Atendidos" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 6: A Dexter -->
+  <div class="slide slide-content">
+    <span class="badge">Página A Dexter</span>
+    <h2>Sobre a <span>Dexter</span></h2>
+    <p class="description">
+      Página institucional com a fachada editada (homem removido, muro/chão clareado) e seção "Quem Somos" com foto real.
+    </p>
+    <img src="/apresentacao/02-a-dexter.png" alt="Página A Dexter" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 7: Quem Somos -->
+  <div class="slide slide-content">
+    <span class="badge">Página A Dexter</span>
+    <h2>Quem <span>Somos</span></h2>
+    <p class="description">
+      Seção "Quem Somos" com foto real do platô remanufaturado da Dexter com etiqueta SACHS.
+    </p>
+    <img src="/apresentacao/03-quem-somos.png" alt="Quem Somos" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 8: Produto Embreagens -->
+  <div class="slide slide-content">
+    <span class="badge">Página de Produto</span>
+    <h2>Embreagens <span>Remanufaturadas</span></h2>
+    <p class="description">
+      Foto atualizada com disco de embreagem real em close (foto 13). Mostra detalhes da peça remanufaturada.
+    </p>
+    <img src="/apresentacao/05-embreagens.png" alt="Embreagens" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 9: Volantes -->
+  <div class="slide slide-content">
+    <span class="badge">Página de Produto</span>
+    <h2>Volantes de <span>Embreagem</span></h2>
+    <p class="description">
+      Foto real do volante retificado (foto 24) — peça limpa e pronta para montagem.
+    </p>
+    <img src="/apresentacao/06-volantes.png" alt="Volantes" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 10: Garfos -->
+  <div class="slide slide-content">
+    <span class="badge">Página de Produto</span>
+    <h2>Garfos de <span>Embreagem</span></h2>
+    <p class="description">
+      Foto real do garfo de acionamento (foto 26) — peça remanufaturada com reforço estrutural.
+    </p>
+    <img src="/apresentacao/07-garfos.png" alt="Garfos" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 11: Mancais -->
+  <div class="slide slide-content">
+    <span class="badge">Página de Produto</span>
+    <h2>Mancais e <span>Rolamentos</span></h2>
+    <p class="description">
+      Foto real do mancal/rolamento (foto 28) — peça nova de alta durabilidade.
+    </p>
+    <img src="/apresentacao/08-mancais.png" alt="Mancais" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 12: Antes e Depois -->
+  <div class="slide slide-content">
+    <span class="badge badge-green">Seção Nova</span>
+    <h2>Antes e <span>Depois</span></h2>
+    <p class="description">
+      Comparação real entre platô desgastado (foto 32) e platô remanufaturado (foto 16). 
+      Economia de até 40% com garantia de 06 meses.
+    </p>
+    <img src="/apresentacao/10-antes-depois.png" alt="Antes e Depois" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 13: Notícias -->
+  <div class="slide slide-content">
+    <span class="badge badge-green">Conteúdo Novo</span>
+    <h2>Notícias e <span>Artigos</span></h2>
+    <p class="description">
+      Duas novas notícias adicionadas: Fenatran 2024 (equipe Dexter na Scania) e Lendas Camp (patrocínio com estrelas do futebol).
+    </p>
+    <img src="/apresentacao/11-noticias.png" alt="Notícias" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 14: Notícias Full -->
+  <div class="slide slide-content">
+    <span class="badge badge-green">Conteúdo Novo</span>
+    <h2>Página de Notícias <span>Completa</span></h2>
+    <p class="description">
+      Visão completa da página com os 5 artigos: Fenatran 2024, Lendas Camp e os 3 artigos técnicos existentes.
+    </p>
+    <img src="/apresentacao/12-noticias-full.png" alt="Notícias completa" class="screenshot" />
+  </div>
+
+  <!-- SLIDE 15: Próximos Passos -->
+  <div class="slide slide-summary">
+    <h2>Próximos <span>Passos</span></h2>
+    <p class="description">
+      Itens pendentes para futuras atualizações.
+    </p>
+    <div class="summary-grid" style="grid-template-columns: 1fr;">
+      <div class="summary-card">
+        <h3>🔲 Remoção de Fundo — Fotos 30/31</h3>
+        <p>Carlos solicitou a remoção de fundo das fotos de produto (disco e platô), deixando somente as peças. Necessário usar Photoshop/Canva ou ferramenta de background removal.</p>
+      </div>
+      <div class="summary-card">
+        <h3>🔲 Fotos Adicionais do Lendas Camp</h3>
+        <p>Carlos compartilhou links do Google Drive com mais fotos do evento. Selecionar as 7 melhores para montar galeria na notícia.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SLIDE 16: Créditos -->
+  <div class="slide slide-cover">
+    <h1 style="font-size: 2.5rem;">Dexter <span>Embreagens</span></h1>
+    <p class="subtitle">Plataforma desenvolvida por NextHub</p>
+    <p style="color: #64748b; margin-top: 1rem;">10 de Julho de 2026 — São Paulo/SP</p>
+  </div>
+
+</body>
+</html>
