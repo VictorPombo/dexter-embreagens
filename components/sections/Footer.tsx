@@ -62,7 +62,7 @@ export function Footer() {
               <li>Fixo: (11) 2704-8290</li>
               <li>Vendas: (11) 91916-9977</li>
               <li>Administrativo: (11) 91963-0006</li>
-              <li className="text-slate-500 italic">[INSERIR E-MAIL]</li>
+              <li className="text-slate-200">dexterembreagens@hotmail.com</li>
             </ul>
           </div>
         </div>

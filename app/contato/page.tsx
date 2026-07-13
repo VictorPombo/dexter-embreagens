@@ -75,7 +75,7 @@ export default function ContatoPage() {
                 </div>
                 <div>
                   <h4 className="font-bold text-slate-900">E-mail</h4>
-                  <p className="text-slate-500 italic text-sm">[INSERIR E-MAIL]</p>
+                  <p className="text-slate-800 text-sm">dexterembreagens@hotmail.com</p>
                 </div>
               </div>
 
