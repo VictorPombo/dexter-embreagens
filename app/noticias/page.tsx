@@ -25,30 +25,6 @@ const ARTICLES = [
     image: "/images/lendas-camp-capa.jpg",
     category: "Patrocínio",
   },
-  {
-    id: 1,
-    title: "A Importância da Manutenção Preventiva em Embreagens Pesadas",
-    excerpt: "Saiba como evitar que o seu caminhão fique parado na estrada por problemas que poderiam ser identificados nas revisões periódicas.",
-    date: "12 Março 2024",
-    image: "/images/blog_manutencao.png",
-    category: "Dicas de Manutenção",
-  },
-  {
-    id: 2,
-    title: "Sinais de que a Embreagem do seu Caminhão Está Patinando",
-    excerpt: "Motor acelerando mas a velocidade não acompanha? Entenda os primeiros sinais de desgaste e quando é a hora certa de encostar na oficina.",
-    date: "28 Fevereiro 2024",
-    image: "/images/blog_estrada.png",
-    category: "Diagnóstico",
-  },
-  {
-    id: 3,
-    title: "Por que Escolher Embreagens Remanufaturadas de Fábrica?",
-    excerpt: "Descubra como o processo industrial de remanufatura garante qualidade de peça nova com um custo-benefício insuperável para a sua frota.",
-    date: "15 Janeiro 2024",
-    image: "/images/blog_fabrica.png",
-    category: "Indústria",
-  },
 ];
 
 export default function NoticiasPage() {

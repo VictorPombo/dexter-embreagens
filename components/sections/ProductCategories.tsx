@@ -6,10 +6,10 @@ import Link from "next/link";
 
 /** Mapa de imagens por slug do produto */
 const IMAGE_MAP: Record<string, string> = {
-  embreagens: "/images/disco-embreagem-remanufaturada.jpg",
-  volantes: "/images/volante-embreagem-01.jpg",
-  garfos: "/images/garfo-embreagem-01.jpg",
-  mancais: "/images/mancal-rolamento-01.jpg",
+  embreagens: "/images/produto-embreagens-nobg-v2.png",
+  volantes: "/images/produto-volantes-nobg-v2.png",
+  garfos: "/images/produto-garfos-nobg-v2.png",
+  mancais: "/images/produto-mancais-nobg-v2.png",
 };
 
 /** Produtos em destaque na Home (4 primeiros) */
@@ -40,12 +40,15 @@ export function ProductCategories() {
                 className="group relative bg-white rounded-2xl border-2 border-slate-100 overflow-hidden flex flex-col hover:border-dexter-red/30 hover:shadow-xl hover:shadow-dexter-red/5 hover:-translate-y-1 transition-all duration-300"
               >
                 {/* Imagem do produto */}
-                <div className="relative w-full aspect-square bg-slate-900 overflow-hidden">
+                <div 
+                  className="relative w-full aspect-square overflow-hidden"
+                  style={{ background: 'linear-gradient(135deg, #1e3a8a 50%, #dc2626 50%)' }}
+                >
                   <Image
                     src={imageSrc}
                     alt={product.nome}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="object-contain p-4 group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl"
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
                   {/* Overlay gradiente */}
