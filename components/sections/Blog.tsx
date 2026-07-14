@@ -3,6 +3,7 @@
 import { Container } from "@/components/ui/Container";
 import { ArrowRight, Calendar } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const ARTICLES = [
   {
@@ -45,7 +46,7 @@ export function Blog() {
                   alt={article.title}
                   fill
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  className={`object-cover group-hover:scale-105 transition-transform duration-700 ${article.id === 5 ? 'object-top' : 'object-center'}`}
                 />
                 <div className="absolute top-4 left-4 bg-dexter-red text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">
                   {article.category}
@@ -64,10 +65,10 @@ export function Blog() {
                   {article.excerpt}
                 </p>
                 <div className="mt-auto">
-                  <a href="#" className="inline-flex items-center gap-2 font-bold text-dexter-blue hover:text-dexter-red transition-colors">
+                  <Link href="/" className="inline-flex items-center gap-2 font-bold text-dexter-blue hover:text-dexter-red transition-colors">
                     Ler artigo completo
                     <ArrowRight className="w-4 h-4" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -75,9 +76,11 @@ export function Blog() {
         </div>
         
         <div style={{ marginTop: '3rem', textAlign: 'center', width: '100%' }}>
-          <button className="px-8 py-3 rounded-full border-2 border-slate-200 text-slate-600 font-bold hover:border-dexter-red hover:text-dexter-red transition-colors">
-            Ver Todos os Artigos
-          </button>
+          <Link href="/">
+            <button className="px-8 py-3 rounded-full border-2 border-slate-200 text-slate-600 font-bold hover:border-dexter-red hover:text-dexter-red transition-colors">
+              Ver Todos os Artigos
+            </button>
+          </Link>
         </div>
       </Container>
     </section>

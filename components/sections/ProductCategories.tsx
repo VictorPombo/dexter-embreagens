@@ -8,7 +8,7 @@ import Link from "next/link";
 const IMAGE_MAP: Record<string, string> = {
   embreagens: "/images/produto-embreagens-nobg-v2.png",
   volantes: "/images/produto-volantes-nobg-v2.png",
-  garfos: "/images/produto-garfos-nobg-v2.png",
+  garfos: "/images/produto-garfos.png",
   mancais: "/images/produto-mancais-nobg-v2.png",
 };
 
@@ -48,7 +48,7 @@ export function ProductCategories() {
                     src={imageSrc}
                     alt={product.nome}
                     fill
-                    className="object-contain p-4 group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl"
+                    className="object-contain p-6 group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl"
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
                   {/* Overlay gradiente */}

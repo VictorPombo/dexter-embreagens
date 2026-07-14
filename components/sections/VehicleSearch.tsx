@@ -4,7 +4,8 @@
 import { useState } from "react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { Search, ChevronRight, MessageCircle, Truck } from "lucide-react";
+import { Search, ChevronRight, Truck } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
 
 // Dados do catálogo completo das aplicações
 const VEICULOS = [
@@ -48,7 +49,7 @@ const VEICULOS = [
   { id: 38, modelo: "Mercedes 1313", peca: "Kit Embreagem", codigo: "7171/8391" },
   { id: 39, modelo: "Mercedes 1418", peca: "Kit Embreagem", codigo: "7192/8326" },
   { id: 40, modelo: "Mercedes 1634", peca: "Kit Embreagem", codigo: "7497/8705 (estria grossa)" },
-  { id: 41, modelo: "Mercedes 8-150", peca: "Kit Embreagem", codigo: "7142/8585 rolamento á R$180,00" },
+  { id: 41, modelo: "Mercedes 8-150", peca: "Kit Embreagem", codigo: "7142/8585" },
   { id: 42, modelo: "Mercedes 608", peca: "Kit Embreagem", codigo: "7125/8408" },
   { id: 43, modelo: "Mercedes Acelo 815", peca: "Kit Embreagem", codigo: "7343/8523" },
   { id: 44, modelo: "Ônibus Mercedes", peca: "Kit Embreagem", codigo: "7597/8766" },
@@ -200,17 +201,14 @@ export function VehicleSearch() {
                       <div className="absolute top-0 left-0 w-1 h-full bg-slate-100 group-hover:bg-dexter-red transition-colors"></div>
                       
                       <div className="pl-2">
-                        <div className="flex justify-between items-start mb-3">
-                          <span className="px-3 py-1 bg-slate-100 text-slate-600 rounded-md text-xs font-bold uppercase tracking-wider">
-                            {item.modelo}
-                          </span>
+                        <div className="flex justify-end items-start mb-3">
                           <span className="text-xs font-mono font-medium text-slate-400 bg-slate-50 px-2 py-1 rounded">
                             Cód: {item.codigo}
                           </span>
                         </div>
                         
-                        <h4 className="font-bold text-xl text-slate-900 mb-1">{item.peca}</h4>
-                        <p className="text-slate-600 font-medium text-sm mb-6">Modelo: {item.modelo}</p>
+                        <h4 className="font-bold text-xl text-slate-900 mb-1">{item.modelo}</h4>
+                        <p className="text-slate-600 font-medium text-sm mb-6">{item.peca}</p>
                       </div>
                       
                       <a 
@@ -223,7 +221,7 @@ export function VehicleSearch() {
                           variant="primary" 
                           className="w-full gap-2 bg-slate-100 text-slate-800 border-none hover:bg-dexter-red hover:text-white group-hover:bg-dexter-red group-hover:text-white transition-all shadow-none"
                         >
-                          <MessageCircle className="w-4 h-4" />
+                          <WhatsAppIcon className="w-4 h-4" />
                           Orçar Peça
                           <ChevronRight className="w-4 h-4 ml-auto" />
                         </Button>

@@ -1,7 +1,8 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { PRODUCTS, getAllProductSlugs, getProductBySlug } from "@/lib/products";
-import { CheckCircle, MessageCircle, ArrowLeft } from "lucide-react";
+import { CheckCircle, ArrowLeft } from "lucide-react";
+import { WhatsAppIcon } from "@/components/ui/icons/WhatsAppIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -50,17 +51,20 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               </p>
               <a href={waLink} target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-[#25D366] text-white border-none hover:bg-[#20bd5a] gap-2 font-bold shadow-xl">
-                  <MessageCircle className="w-5 h-5" />
+                  <WhatsAppIcon className="w-5 h-5" />
                   Solicitar Orçamento
                 </Button>
               </a>
             </div>
-            <div className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden bg-slate-800">
+            <div 
+              className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden"
+              style={{ background: 'linear-gradient(135deg, #1e3a8a 50%, #dc2626 50%)' }}
+            >
               <Image
                 src={product.imagem}
                 alt={product.nome}
                 fill
-                className="object-cover mix-blend-luminosity opacity-80 hover:opacity-100 hover:mix-blend-normal transition-all duration-500"
+                className="object-contain p-6 drop-shadow-2xl hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>
@@ -101,7 +105,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <div className="text-center mt-12">
               <a href={waLink} target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-dexter-red text-white border-none hover:bg-red-700 gap-2 font-bold shadow-lg">
-                  <MessageCircle className="w-5 h-5" />
+                  <WhatsAppIcon className="w-5 h-5" />
                   Orçar {product.nome}
                 </Button>
               </a>

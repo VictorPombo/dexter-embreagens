@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Caminhões das principais linhas pesadas: FH, FM, R, P, Actros, Atego, Axor, Cargo, Constellation e ônibus rodoviários/urbanos.",
-    imagem: "/images/disco-embreagem-remanufaturada-novo.jpg",
+    imagem: "/images/produto-embreagens-nobg-v2.png",
     icon: "Layers",
   },
   {
@@ -62,7 +62,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Todos os modelos de caminhões e ônibus com volante de embreagem convencional.",
-    imagem: "/images/volante-embreagem-01.jpg",
+    imagem: "/images/produto-volantes-nobg-v2.png",
     icon: "Circle",
   },
   {
@@ -81,7 +81,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Actros, Atego, Axor, FH, FM, R, P, Cargo, Constellation e demais modelos de linha pesada.",
-    imagem: "/images/garfo-embreagem-01.jpg",
+    imagem: "/images/produto-garfos.png",
     icon: "GitFork",
   },
   {
@@ -100,7 +100,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Caminhões, ônibus e guindastes de todas as marcas com embreagem mecânica ou hidráulica.",
-    imagem: "/images/mancal-rolamento-01.jpg",
+    imagem: "/images/produto-mancais-nobg-v2.png",
     icon: "Shield",
   },
 ];

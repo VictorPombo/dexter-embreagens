@@ -5,6 +5,7 @@ import { ProductCategories } from "@/components/sections/ProductCategories";
 import { ClientSegments } from "@/components/sections/ClientSegments";
 import { Blog } from "@/components/sections/Blog";
 import { Location } from "@/components/sections/Location";
+import { BeforeAndAfter } from "@/components/sections/BeforeAndAfter";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Differentials />
       <ProductCategories />
       <ClientSegments />
+      <BeforeAndAfter />
       <Blog />
       <Location />
     </>
