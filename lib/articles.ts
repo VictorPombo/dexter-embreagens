@@ -54,7 +54,6 @@ export const ARTICLES: Article[] = [
     ],
     gallery: [
       { src: "/images/lendas-camp/lendas-camp-01.jpg", alt: "Equipe Dexter Embreagens no Lendas Camp com Velloso e Craque Neto" },
-      { src: "/images/lendas-camp-capa.jpg", alt: "Time reunido no Lendas Camp 2024" },
     ],
   },
 ];
