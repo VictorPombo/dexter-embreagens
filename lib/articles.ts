@@ -56,7 +56,12 @@ export const ARTICLES: Article[] = [
       "O sucesso da primeira edição foi tão grande que confirmou as edições seguintes. A Dexter Embreagens seguiu firme como parceira do projeto!",
     ],
     gallery: [
-      { src: "/images/lendas-camp/lendas-camp-01.jpg", alt: "Equipe Dexter Embreagens com jogadores no Lendas Camp #1" },
+      { src: "/images/lendas-camp1/foto-1.jpeg", alt: "Participação da Dexter Embreagens no Lendas Camp 1" },
+      { src: "/images/lendas-camp1/foto-2.jpeg", alt: "Momentos do Lendas Camp 1" },
+      { src: "/images/lendas-camp1/foto-3.jpeg", alt: "Craques do futebol no Lendas Camp 1" },
+      { src: "/images/lendas-camp1/foto-4.jpeg", alt: "Equipe no Lendas Camp 1" },
+      { src: "/images/lendas-camp1/foto-5.jpeg", alt: "Lendas Camp 1 - Edição 2023" },
+      { src: "/images/lendas-camp1/foto-6.jpeg", alt: "Jovens e ídolos no Lendas Camp 1" },
     ],
   },
   {
