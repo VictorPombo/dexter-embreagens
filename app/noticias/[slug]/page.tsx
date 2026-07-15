@@ -38,7 +38,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           src={article.coverImage}
           alt={article.title}
           fill
-          className={`object-cover ${article.slug === "lendas-camp" ? "object-top" : "object-center"}`}
+          className="object-cover"
+          style={{ objectPosition: article.slug === "lendas-camp" ? "50% 25%" : "center" }}
           priority
           sizes="100vw"
         />
@@ -85,20 +86,24 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <h2 className="text-2xl font-condensed font-bold uppercase text-slate-900 mb-8">
                   Galeria de <span className="text-dexter-red">Fotos</span>
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className={`grid gap-4 ${article.gallery.length === 1 ? 'grid-cols-1 max-w-lg mx-auto' : 'grid-cols-1 md:grid-cols-2'}`}>
                   {article.gallery.map((photo, i) => (
                     <div
                       key={i}
                       className={`relative overflow-hidden rounded-2xl border border-slate-200 shadow-md group ${
-                        i === 0 ? "md:col-span-2 aspect-[16/9]" : "aspect-[4/3]"
+                        article.gallery.length === 1
+                          ? "aspect-[3/4]"
+                          : i === 0
+                            ? "md:col-span-2 aspect-[16/9]"
+                            : "aspect-[4/3]"
                       }`}
                     >
                       <Image
                         src={photo.src}
                         alt={photo.alt}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-700"
-                        sizes={i === 0 ? "100vw" : "50vw"}
+                        className="object-cover object-[50%_25%] group-hover:scale-105 transition-transform duration-700"
+                        sizes={article.gallery.length === 1 ? "100vw" : i === 0 ? "100vw" : "50vw"}
                       />
                     </div>
                   ))}
