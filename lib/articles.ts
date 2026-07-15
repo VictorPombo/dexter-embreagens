@@ -94,7 +94,7 @@ export const ARTICLES: Article[] = [
     excerpt:
       "O Lendas Camp confirma sua terceira edição em outubro de 2025 no CT Dartanhã, em Guararema (SP). A Dexter segue como patrocinadora do maior evento de imersão futebolística para jovens.",
     date: "Outubro 2025",
-    coverImage: "/images/lendas-camp-capa.jpg",
+    coverImage: "/images/lendas-camp3/banner.jpeg",
     coverPosition: "50% 25%",
     category: "Patrocínio",
     content: [
@@ -105,7 +105,10 @@ export const ARTICLES: Article[] = [
       "A Dexter Embreagens se orgulha de estar presente desde a primeira edição deste projeto incrível. Apoiar o Lendas Camp é parte do nosso compromisso em contribuir com a comunidade e inspirar as novas gerações, dentro e fora das oficinas.",
     ],
     gallery: [
-      { src: "/images/lendas-camp/lendas-camp-01.jpg", alt: "Equipe Dexter Embreagens no Lendas Camp" },
+      { src: "/images/lendas-camp3/foto-1.jpeg", alt: "Logomarca da Dexter Embreagens no Lendas Camp 3" },
+      { src: "/images/lendas-camp3/foto-2.jpeg", alt: "Dexter Embreagens em destaque no Lendas Camp 3" },
+      { src: "/images/lendas-camp3/foto-3.jpeg", alt: "Apoio da Dexter Embreagens ao Lendas Camp 3" },
+      { src: "/images/lendas-camp3/foto-4.jpeg", alt: "Camisas do Lendas Camp 3 com a logo da Dexter Embreagens" },
     ],
   },
 ];
