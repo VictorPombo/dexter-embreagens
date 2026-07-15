@@ -8,7 +8,7 @@ import Link from "next/link";
 const IMAGE_MAP: Record<string, string> = {
   embreagens: "/images/produto-embreagens-nobg-v3.png",
   volantes: "/images/produto-volantes-nobg-v2.png",
-  garfos: "/images/produto-garfos-nobg-v7.png",
+  garfos: "/images/produto-garfos-nobg-v8.png",
   mancais: "/images/produto-mancais-nobg-v2.png",
 };
 
