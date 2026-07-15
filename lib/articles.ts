@@ -81,7 +81,11 @@ export const ARTICLES: Article[] = [
       "O Lendas Camp #2 consolidou o evento como referência em vivências esportivas para jovens no Brasil. E a Dexter Embreagens já garantiu presença na terceira edição!",
     ],
     gallery: [
-      { src: "/images/lendas-camp/lendas-camp-01.jpg", alt: "Dexter Embreagens no Lendas Camp #2 — camisetas com a marca" },
+      { src: "/images/lendas-camp2/foto-1.jpeg", alt: "Atividades no Lendas Camp 2" },
+      { src: "/images/lendas-camp2/foto-2.jpeg", alt: "Craques em campo no Lendas Camp 2" },
+      { src: "/images/lendas-camp2/foto-3.jpeg", alt: "Dexter Embreagens no Lendas Camp 2" },
+      { src: "/images/lendas-camp2/foto-4.jpeg", alt: "Momentos inesquecíveis no Lendas Camp 2" },
+      { src: "/images/lendas-camp2/foto-5.jpeg", alt: "Equipe e jovens atletas no Lendas Camp 2" },
     ],
   },
   {
