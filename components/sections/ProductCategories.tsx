@@ -6,7 +6,7 @@ import Link from "next/link";
 
 /** Mapa de imagens por slug do produto */
 const IMAGE_MAP: Record<string, string> = {
-  embreagens: "/images/produto-embreagens-nobg-v2.png",
+  embreagens: "/images/produto-embreagens-nobg-v3.png",
   volantes: "/images/produto-volantes-nobg-v2.png",
   garfos: "/images/produto-garfos-nobg-v2.png",
   mancais: "/images/produto-mancais-nobg-v2.png",

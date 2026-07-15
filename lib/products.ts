@@ -45,7 +45,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Caminhões das principais linhas pesadas: FH, FM, R, P, Actros, Atego, Axor, Cargo, Constellation e ônibus rodoviários/urbanos.",
-    imagem: "/images/produto-embreagens-nobg-v2.png",
+    imagem: "/images/produto-embreagens-nobg-v3.png",
     icon: "Layers",
   },
   {

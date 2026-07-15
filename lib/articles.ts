@@ -7,6 +7,8 @@ export interface Article {
   date: string;
   coverImage: string;
   category: string;
+  /** Posição customizada da imagem de capa no hero (CSS object-position) */
+  coverPosition?: string;
   /** Conteúdo completo do artigo em parágrafos */
   content: string[];
   /** Galeria de fotos do artigo */
@@ -38,22 +40,63 @@ export const ARTICLES: Article[] = [
     ],
   },
   {
-    slug: "lendas-camp",
-    title: "Dexter Embreagens patrocina o Lendas Camp",
+    slug: "lendas-camp-1",
+    title: "Dexter Embreagens no Lendas Camp #1",
     excerpt:
-      "Fomos patrocinadores do Lendas Camp, projeto social que reúne crianças com estrelas do futebol brasileiro como Craque Neto, Velloso, Muller e outros. Orgulho de apoiar essa iniciativa.",
-    date: "2024",
+      "A Dexter Embreagens foi patrocinadora da primeira edição do Lendas Camp, uma imersão futebolística para jovens talentos ao lado de craques como Craque Neto, Velloso e Muller.",
+    date: "2023",
     coverImage: "/images/lendas-camp-capa.jpg",
+    coverPosition: "50% 25%",
     category: "Patrocínio",
     content: [
-      "A Dexter Embreagens tem orgulho de ter sido uma das patrocinadoras do Lendas Camp, um projeto social incrível que une crianças e adolescentes a lendas do futebol brasileiro.",
-      "O evento contou com a participação de grandes nomes como Craque Neto, Velloso, Muller e muitos outros ídolos do esporte, que dedicaram seu tempo para compartilhar experiências, ensinar técnicas e, principalmente, inspirar as novas gerações através do esporte.",
-      "Mais do que futebol, o Lendas Camp promove valores como disciplina, trabalho em equipe e superação — princípios que também guiam o dia a dia da Dexter Embreagens no mercado de pesados.",
-      "Acreditamos que investir em projetos sociais é uma forma de retribuir à comunidade e contribuir para a formação de cidadãos melhores. O sorriso de cada criança que participou do evento já é a maior recompensa.",
-      "Seguimos firmes no compromisso de apoiar iniciativas que fazem a diferença, dentro e fora das oficinas. O Lendas Camp já confirmou sua terceira edição e nós estaremos lá novamente!",
+      "A Dexter Embreagens tem orgulho de ter sido uma das patrocinadoras da primeira edição do Lendas Camp, um projeto social inovador que uniu jovens talentos a lendas do futebol brasileiro.",
+      "O Lendas Camp #1 foi a estreia de um conceito inédito: uma imersão futebolística onde crianças e adolescentes de 10 a 17 anos puderam treinar, conviver e aprender diretamente com grandes nomes do esporte como Craque Neto, Velloso, Muller e outros ídolos que marcaram época no futebol.",
+      "A Dexter marcou presença com a marca estampada nas camisetas oficiais do evento, demonstrando nosso apoio a iniciativas que vão além do esporte — promovendo valores como disciplina, trabalho em equipe, respeito e superação.",
+      "Para nós, apoiar o Lendas Camp é mais do que um patrocínio. É uma forma de contribuir com a formação de cidadãos melhores e inspirar as novas gerações, dentro e fora do campo.",
+      "O sucesso da primeira edição foi tão grande que confirmou as edições seguintes. A Dexter Embreagens seguiu firme como parceira do projeto!",
     ],
     gallery: [
-      { src: "/images/lendas-camp/lendas-camp-01.jpg", alt: "Equipe Dexter Embreagens no Lendas Camp com Velloso e Craque Neto" },
+      { src: "/images/lendas-camp/lendas-camp-01.jpg", alt: "Equipe Dexter Embreagens com jogadores no Lendas Camp #1" },
+    ],
+  },
+  {
+    slug: "lendas-camp-2",
+    title: "Dexter Embreagens no Lendas Camp #2",
+    excerpt:
+      "Pelo segundo ano consecutivo, a Dexter Embreagens apoiou o Lendas Camp. A segunda edição reuniu ainda mais jovens atletas e trouxe novas estrelas do futebol brasileiro.",
+    date: "2024",
+    coverImage: "/images/lendas-camp-capa.jpg",
+    coverPosition: "50% 25%",
+    category: "Patrocínio",
+    content: [
+      "Pelo segundo ano consecutivo, a Dexter Embreagens esteve presente como patrocinadora do Lendas Camp, reforçando nosso compromisso com projetos sociais que fazem a diferença na vida dos jovens.",
+      "A segunda edição do Lendas Camp foi ainda maior que a primeira, reunindo mais jovens atletas e trazendo novos craques do futebol brasileiro. Entre os participantes estiveram nomes como Souza, André Petroni, Alexandre Alves e Rogerinho R9, além dos já conhecidos Craque Neto e Velloso.",
+      "A programação incluiu treinamentos intensivos com os atletas, clínicas táticas, jogos competitivos e palestras de uma equipe multidisciplinar que abordou temas como nutrição esportiva e psicologia para jovens atletas.",
+      "A marca Dexter Embreagens novamente estampou as camisetas oficiais do evento, e o resultado foi emocionante: ver o sorriso de cada criança ao lado dos seus ídolos é a maior recompensa para quem acredita no poder do esporte como ferramenta de transformação.",
+      "O Lendas Camp #2 consolidou o evento como referência em vivências esportivas para jovens no Brasil. E a Dexter Embreagens já garantiu presença na terceira edição!",
+    ],
+    gallery: [
+      { src: "/images/lendas-camp/lendas-camp-01.jpg", alt: "Dexter Embreagens no Lendas Camp #2 — camisetas com a marca" },
+    ],
+  },
+  {
+    slug: "lendas-camp-3",
+    title: "Dexter Embreagens confirma presença no Lendas Camp #3",
+    excerpt:
+      "O Lendas Camp confirma sua terceira edição em outubro de 2025 no CT Dartanhã, em Guararema (SP). A Dexter segue como patrocinadora do maior evento de imersão futebolística para jovens.",
+    date: "Outubro 2025",
+    coverImage: "/images/lendas-camp-capa.jpg",
+    coverPosition: "50% 25%",
+    category: "Patrocínio",
+    content: [
+      "A Dexter Embreagens confirma sua presença como patrocinadora na terceira edição do Lendas Camp, que acontecerá nos dias 10, 11 e 12 de outubro de 2025 no CT Dartanhã, em Guararema (SP).",
+      "O Lendas Camp 3 é voltado para jovens atletas de 10 a 17 anos e oferece a oportunidade de treinar e conviver com atletas que marcaram época no futebol brasileiro e internacional. As edições anteriores contaram com a presença de nomes como Craque Neto, Velloso, Souza, André Petroni, Alexandre Alves e Rogerinho R9.",
+      "\"Nosso objetivo é ir muito além do campo. Queremos inspirar esses jovens, não apenas a serem melhores jogadores, mas também melhores pessoas, com base nos princípios de disciplina, respeito, superação e trabalho em equipe\", afirma Renato Lanzoni, fundador e CEO do Lendas Camp.",
+      "A programação completa inclui treinamentos com atletas, clínicas táticas, jogos competitivos e palestras de equipe multidisciplinar, abordando temas como nutrição esportiva e psicologia para atletas.",
+      "A Dexter Embreagens se orgulha de estar presente desde a primeira edição deste projeto incrível. Apoiar o Lendas Camp é parte do nosso compromisso em contribuir com a comunidade e inspirar as novas gerações, dentro e fora das oficinas.",
+    ],
+    gallery: [
+      { src: "/images/lendas-camp/lendas-camp-01.jpg", alt: "Equipe Dexter Embreagens no Lendas Camp" },
     ],
   },
 ];

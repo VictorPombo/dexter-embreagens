@@ -43,9 +43,8 @@ export default function NoticiasPage() {
                       alt={article.title}
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
-                      className={`object-cover group-hover:scale-105 transition-transform duration-700 ${
-                        article.slug === "lendas-camp" ? "object-top" : "object-center"
-                      }`}
+                      className="object-cover group-hover:scale-105 transition-transform duration-700"
+                      style={{ objectPosition: article.coverPosition || "center" }}
                     />
                     <div className="absolute top-4 left-4 bg-dexter-red text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">
                       {article.category}

@@ -39,7 +39,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           alt={article.title}
           fill
           className="object-cover"
-          style={{ objectPosition: article.slug === "lendas-camp" ? "50% 25%" : "center" }}
+          style={{ objectPosition: article.coverPosition || "center" }}
           priority
           sizes="100vw"
         />
