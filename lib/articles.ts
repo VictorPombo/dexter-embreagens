@@ -70,7 +70,7 @@ export const ARTICLES: Article[] = [
     excerpt:
       "Ainda em 2024, a Dexter Embreagens apoiou a segunda parte do Lendas Camp. A edição reuniu ainda mais jovens atletas e trouxe novas estrelas do futebol brasileiro.",
     date: "2024",
-    coverImage: "/images/lendas-camp-capa.jpg",
+    coverImage: "/images/lendas-camp2/banner.jpeg",
     coverPosition: "50% 25%",
     category: "Patrocínio",
     content: [
