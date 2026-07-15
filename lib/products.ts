@@ -81,7 +81,7 @@ export const PRODUCTS: Product[] = [
     ],
     aplicacao:
       "Actros, Atego, Axor, FH, FM, R, P, Cargo, Constellation e demais modelos de linha pesada.",
-    imagem: "/images/produto-garfos-nobg-v2.png",
+    imagem: "/images/produto-garfos-nobg-v4.png",
     icon: "GitFork",
   },
   {
