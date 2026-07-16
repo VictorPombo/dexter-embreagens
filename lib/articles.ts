@@ -17,6 +17,29 @@ export interface Article {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "lendas-camp-3",
+    title: "Dexter Embreagens confirma presença no Lendas Camp #3",
+    excerpt:
+      "O Lendas Camp confirma sua terceira edição em outubro de 2025 no CT Dartanhã, em Guararema (SP). A Dexter segue como patrocinadora do maior evento de imersão futebolística para jovens.",
+    date: "Outubro 2025",
+    coverImage: "/images/lendas-camp3/banner.jpeg",
+    coverPosition: "50% 25%",
+    category: "Patrocínio",
+    content: [
+      "A Dexter Embreagens confirma sua presença como patrocinadora na terceira edição do Lendas Camp, que acontecerá nos dias 10, 11 e 12 de outubro de 2025 no CT Dartanhã, em Guararema (SP).",
+      "O Lendas Camp 3 é voltado para jovens atletas de 10 a 17 anos e oferece a oportunidade de treinar e conviver com atletas que marcaram época no futebol brasileiro e internacional. As edições anteriores contaram com a presença de nomes como Craque Neto, Velloso, Souza, André Petroni, Alexandre Alves e Rogerinho R9.",
+      "\"Nosso objetivo é ir muito além do campo. Queremos inspirar esses jovens, não apenas a serem melhores jogadores, mas também melhores pessoas, com base nos princípios de disciplina, respeito, superação e trabalho em equipe\", afirma Renato Lanzoni, fundador e CEO do Lendas Camp.",
+      "A programação completa inclui treinamentos com atletas, clínicas táticas, jogos competitivos e palestras de equipe multidisciplinar, abordando temas como nutrição esportiva e psicologia para atletas.",
+      "A Dexter Embreagens se orgulha de estar presente desde a primeira edição deste projeto incrível. Apoiar o Lendas Camp é parte do nosso compromisso em contribuir com a comunidade e inspirar as novas gerações, dentro e fora das oficinas.",
+    ],
+    gallery: [
+      { src: "/images/lendas-camp3/foto-1.jpeg", alt: "Logomarca da Dexter Embreagens no Lendas Camp 3" },
+      { src: "/images/lendas-camp3/foto-2.jpeg", alt: "Dexter Embreagens em destaque no Lendas Camp 3" },
+      { src: "/images/lendas-camp3/foto-3.jpeg", alt: "Apoio da Dexter Embreagens ao Lendas Camp 3" },
+      { src: "/images/lendas-camp3/foto-4.jpeg", alt: "Camisas do Lendas Camp 3 com a logo da Dexter Embreagens" },
+    ],
+  },
+  {
     slug: "fenatran-2024",
     title: "Dexter Embreagens na Fenatran 2024",
     excerpt:
@@ -86,29 +109,6 @@ export const ARTICLES: Article[] = [
       { src: "/images/lendas-camp2/foto-3.jpeg", alt: "Dexter Embreagens no Lendas Camp 2" },
       { src: "/images/lendas-camp2/foto-4.jpeg", alt: "Momentos inesquecíveis no Lendas Camp 2" },
       { src: "/images/lendas-camp2/foto-5.jpeg", alt: "Equipe e jovens atletas no Lendas Camp 2" },
-    ],
-  },
-  {
-    slug: "lendas-camp-3",
-    title: "Dexter Embreagens confirma presença no Lendas Camp #3",
-    excerpt:
-      "O Lendas Camp confirma sua terceira edição em outubro de 2025 no CT Dartanhã, em Guararema (SP). A Dexter segue como patrocinadora do maior evento de imersão futebolística para jovens.",
-    date: "Outubro 2025",
-    coverImage: "/images/lendas-camp3/banner.jpeg",
-    coverPosition: "50% 25%",
-    category: "Patrocínio",
-    content: [
-      "A Dexter Embreagens confirma sua presença como patrocinadora na terceira edição do Lendas Camp, que acontecerá nos dias 10, 11 e 12 de outubro de 2025 no CT Dartanhã, em Guararema (SP).",
-      "O Lendas Camp 3 é voltado para jovens atletas de 10 a 17 anos e oferece a oportunidade de treinar e conviver com atletas que marcaram época no futebol brasileiro e internacional. As edições anteriores contaram com a presença de nomes como Craque Neto, Velloso, Souza, André Petroni, Alexandre Alves e Rogerinho R9.",
-      "\"Nosso objetivo é ir muito além do campo. Queremos inspirar esses jovens, não apenas a serem melhores jogadores, mas também melhores pessoas, com base nos princípios de disciplina, respeito, superação e trabalho em equipe\", afirma Renato Lanzoni, fundador e CEO do Lendas Camp.",
-      "A programação completa inclui treinamentos com atletas, clínicas táticas, jogos competitivos e palestras de equipe multidisciplinar, abordando temas como nutrição esportiva e psicologia para atletas.",
-      "A Dexter Embreagens se orgulha de estar presente desde a primeira edição deste projeto incrível. Apoiar o Lendas Camp é parte do nosso compromisso em contribuir com a comunidade e inspirar as novas gerações, dentro e fora das oficinas.",
-    ],
-    gallery: [
-      { src: "/images/lendas-camp3/foto-1.jpeg", alt: "Logomarca da Dexter Embreagens no Lendas Camp 3" },
-      { src: "/images/lendas-camp3/foto-2.jpeg", alt: "Dexter Embreagens em destaque no Lendas Camp 3" },
-      { src: "/images/lendas-camp3/foto-3.jpeg", alt: "Apoio da Dexter Embreagens ao Lendas Camp 3" },
-      { src: "/images/lendas-camp3/foto-4.jpeg", alt: "Camisas do Lendas Camp 3 com a logo da Dexter Embreagens" },
     ],
   },
 ];

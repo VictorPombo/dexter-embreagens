@@ -41,7 +41,7 @@ export default function ServicosPage() {
                 src={servico.imagem}
                 alt={servico.nome}
                 fill
-                className="object-contain p-4"
+                className="object-cover object-center"
               />
             </div>
           </div>

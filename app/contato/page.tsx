@@ -103,8 +103,8 @@ export default function ContatoPage() {
                 <div>
                   <h4 className="font-bold text-slate-900">Horário</h4>
                   <p className="text-slate-600 text-sm">
-                    Seg-Sex: 09:00 às 17:00<br />
-                    Sábado: 09:00 às 17:00
+                    Seg-Sex: 07:00 às 12:00 | 13:00 às 16:15<br />
+                    Sábado: 08:00 às 12:00 | 13:00 às 16:15
                   </p>
                 </div>
               </div>

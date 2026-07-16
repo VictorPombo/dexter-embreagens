@@ -16,38 +16,38 @@ export function BeforeAndAfter() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
           {/* Antes */}
-          <div className="relative group w-full">
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border-2 border-slate-200 shadow-md">
+          <div className="relative group w-full h-full">
+            <div className="relative w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden border-2 border-slate-200 shadow-md bg-[#7a756b]">
               <Image
                 src="/images/plato-antes-remanufatura.jpg"
                 alt="Platô de embreagem antes da remanufatura — peça usada e desgastada"
                 fill
-                className="object-cover object-center"
+                className="object-cover object-center scale-[1.10] translate-y-[-8.6%]"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
             </div>
-            <div className="absolute bottom-4 left-4 right-4">
-              <span className="inline-block bg-slate-900/90 text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider backdrop-blur-sm">
+            <div className="absolute bottom-2 left-6 right-6 flex justify-center">
+              <span className="inline-block bg-slate-900/90 text-white px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider backdrop-blur-sm shadow-xl">
                 ❌ Antes da Remanufatura
               </span>
             </div>
           </div>
 
           {/* Depois */}
-          <div className="relative group w-full">
-            <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border-2 border-dexter-red/20 shadow-md ring-2 ring-dexter-red/10">
+          <div className="relative group w-full h-full">
+            <div className="relative w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden border-2 border-dexter-red/20 shadow-md ring-2 ring-dexter-red/10">
               <Image
                 src="/images/plato-remanufaturado-novo.jpg"
                 alt="Platô de embreagem depois da remanufatura — peça restaurada como nova"
                 fill
-                className="object-cover object-center"
+                className="object-cover object-center scale-[1.02] translate-y-[-2%]"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
-            <div className="absolute bottom-4 left-4 right-4">
-              <span className="inline-block bg-dexter-red text-white px-4 py-2 rounded-full text-sm font-bold uppercase tracking-wider shadow-lg">
+            <div className="absolute bottom-2 left-6 right-6 flex justify-center">
+              <span className="inline-block bg-dexter-red text-white px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider shadow-xl">
                 ✅ Depois da Remanufatura
               </span>
             </div>
