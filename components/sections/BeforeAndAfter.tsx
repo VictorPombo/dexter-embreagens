@@ -17,16 +17,15 @@ export function BeforeAndAfter() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
           {/* Antes */}
           <div className="relative group w-full h-full">
-            <div className="relative w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden border-2 border-slate-200 shadow-md" style={{ backgroundColor: '#7a756b' }}>
+            <div className="relative w-full h-[350px] md:h-[450px] rounded-2xl overflow-hidden border-2 border-slate-200 shadow-md">
               <Image
-                src="/images/plato-antes-remanufatura.jpg"
+                src="/images/plato-antes-v2.jpg"
                 alt="Platô de embreagem antes da remanufatura — peça usada e desgastada"
                 fill
-                className="object-cover object-center"
-                style={{ transform: 'scale(1.10) translateY(-8.6%)' }}
+                className="object-cover object-[center_70%] scale-[1.08]"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
             </div>
             <div className="absolute bottom-2 left-6 right-6 flex justify-center">
               <span className="inline-block bg-slate-900/90 text-white px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider backdrop-blur-sm shadow-xl">
@@ -43,7 +42,6 @@ export function BeforeAndAfter() {
                 alt="Platô de embreagem depois da remanufatura — peça restaurada como nova"
                 fill
                 className="object-cover object-center"
-                style={{ transform: 'scale(1.02) translateY(-2%)' }}
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
