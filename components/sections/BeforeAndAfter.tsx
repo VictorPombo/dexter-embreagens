@@ -22,12 +22,12 @@ export function BeforeAndAfter() {
                 src="/images/plato-antes-remanufatura.jpg"
                 alt="Platô de embreagem antes da remanufatura — peça usada e desgastada"
                 fill
-                className="object-cover object-center scale-[1.10] translate-y-[-8.6%]"
+                className="object-cover object-center scale-[1.08] translate-y-[-4%]"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
             </div>
-            <div className="absolute bottom-2 left-6 right-6 flex justify-center">
+            <div className="absolute bottom-6 left-6 right-6 flex justify-center">
               <span className="inline-block bg-slate-900/90 text-white px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider backdrop-blur-sm shadow-xl">
                 ❌ Antes da Remanufatura
               </span>
@@ -41,12 +41,12 @@ export function BeforeAndAfter() {
                 src="/images/plato-remanufaturado-novo.jpg"
                 alt="Platô de embreagem depois da remanufatura — peça restaurada como nova"
                 fill
-                className="object-cover object-center scale-[1.02] translate-y-[-2%]"
+                className="object-cover object-center scale-[1.0] translate-y-[4%]"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
             </div>
-            <div className="absolute bottom-2 left-6 right-6 flex justify-center">
+            <div className="absolute bottom-6 left-6 right-6 flex justify-center">
               <span className="inline-block bg-dexter-red text-white px-5 py-2.5 rounded-full text-sm font-bold uppercase tracking-wider shadow-xl">
                 ✅ Depois da Remanufatura
               </span>
