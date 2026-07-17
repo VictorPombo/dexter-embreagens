@@ -48,7 +48,11 @@ export function ProductCategories() {
                     src={imageSrc}
                     alt={product.nome}
                     fill
-                    className="object-contain p-6 group-hover:scale-110 transition-transform duration-500 drop-shadow-2xl"
+                    className={`object-contain transition-transform duration-500 drop-shadow-2xl ${
+                      product.slug === 'embreagens' 
+                        ? 'p-2 -translate-y-6 scale-[1.15] group-hover:scale-[1.25] group-hover:-translate-y-6' 
+                        : 'p-6 group-hover:scale-110'
+                    }`}
                     sizes="(max-width: 768px) 50vw, 25vw"
                   />
                   {/* Overlay gradiente */}
