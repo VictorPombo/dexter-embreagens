@@ -54,7 +54,7 @@ export function Header() {
             <div className="flex items-center gap-3 border-l border-slate-200 pl-8">
               <div>
                 <h4 className="text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-0.5">Atendimento</h4>
-                <p className="text-[12px] text-slate-400">Seg-Sex: 07h às 12h | 13h às 16:15h<br/>Sáb: 08h às 12h | 13h às 16:15h</p>
+                <p className="text-[12px] text-slate-400">Seg-Sex: 07h às 12h | 13h às 16:15h<br/>Sáb: 08h às 12h | 13h às 15:30h</p>
               </div>
               <Clock className="w-8 h-8 text-slate-400 stroke-1" />
             </div>
