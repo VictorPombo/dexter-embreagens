@@ -22,7 +22,7 @@ export const ARTICLES: Article[] = [
     excerpt:
       "Descubra por que optar por uma embreagem remanufaturada da Dexter é a escolha mais inteligente para o seu caminhão, unindo economia, sustentabilidade e durabilidade comprovada.",
     date: "Julho 2026",
-    coverImage: "/images/conjunto-embreagem-fundo.jpg",
+    coverImage: "/images/banner-embreagem-vermelho-azul.png",
     category: "Dicas Técnicas",
     content: [
       "A manutenção do sistema de embreagem é um dos fatores mais críticos para garantir a eficiência e a segurança de veículos pesados como caminhões, ônibus e guindastes. Quando chega a hora da troca, muitos frotistas e caminhoneiros ficam em dúvida: optar por uma peça nova, arriscar uma recondicionada de procedência duvidosa ou investir em uma remanufaturada de qualidade?",
