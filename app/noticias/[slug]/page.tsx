@@ -104,7 +104,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                         src={photo.src}
                         alt={photo.alt}
                         fill
-                        className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                        className="object-contain object-center p-2 group-hover:scale-105 transition-transform duration-700"
                         sizes={article.gallery.length === 1 ? "100vw" : (article.gallery.length % 2 !== 0 && i === 0) ? "100vw" : "50vw"}
                       />
                     </div>
