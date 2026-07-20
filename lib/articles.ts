@@ -17,6 +17,28 @@ export interface Article {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "importancia-embreagem-remanufaturada",
+    title: "A Importância da Troca da Embreagem por uma Remanufaturada de Qualidade",
+    excerpt:
+      "Descubra por que optar por uma embreagem remanufaturada da Dexter é a escolha mais inteligente para o seu caminhão, unindo economia, sustentabilidade e durabilidade comprovada.",
+    date: "Julho 2026",
+    coverImage: "/images/blog_manutencao.png",
+    category: "Dicas Técnicas",
+    content: [
+      "A manutenção do sistema de embreagem é um dos fatores mais críticos para garantir a eficiência e a segurança de veículos pesados como caminhões, ônibus e guindastes. Quando chega a hora da troca, muitos frotistas e caminhoneiros ficam em dúvida: optar por uma peça nova, arriscar uma recondicionada de procedência duvidosa ou investir em uma remanufaturada de qualidade?",
+      "A remanufatura profissional, como a realizada pela Dexter Embreagens, vai muito além de um simples conserto ou recondicionamento básico. Trata-se de um processo industrial rigoroso, onde o conjunto de embreagem usado é completamente desmontado, jateado e inspecionado minuciosamente.",
+      "Todos os componentes sujeitos a desgaste — como molas, placas e lonas — são substituídos por peças novas de alta performance. Em seguida, o conjunto inteiro é submetido a testes rigorosos de carga, pressão e balanceamento em maquinários específicos. O resultado? Uma embreagem com características, calibração e durabilidade rigorosamente idênticas a uma peça nova original.",
+      "Além da enorme vantagem econômica para o frotista — representando uma economia significativa em relação à peça nova —, a escolha pelas embreagens remanufaturadas da Dexter é uma atitude altamente sustentável. O processo reaproveita o aço de carcaças que estão estruturalmente perfeitas, reduzindo a emissão de gases e o desperdício de matéria-prima pesada.",
+      "Com mais de 20 anos de tradição, a Dexter Embreagens garante que a sua frota volte para a estrada com máxima potência, trocas de marcha precisas e total confiabilidade. Nós sabemos que o seu caminhão é a força que move o país, e ele não pode ficar parado."
+    ],
+    gallery: [
+      { src: "/images/embreagem-servico-remanufatura.jpg", alt: "Equipe especializada da Dexter realizando o serviço de remanufatura" },
+      { src: "/images/plato-antes-remanufatura.jpg", alt: "Platô de embreagem antes de passar pelo processo de remanufatura" },
+      { src: "/images/plato-remanufaturado-novo.jpg", alt: "Platô de embreagem após remanufatura: padrão de peça nova" },
+      { src: "/images/disco-embreagem-remanufaturada.jpg", alt: "Disco de embreagem remanufaturado, testado e aprovado" },
+    ],
+  },
+  {
     slug: "lendas-camp-3",
     title: "Dexter Embreagens confirma presença no Lendas Camp #3",
     excerpt:
