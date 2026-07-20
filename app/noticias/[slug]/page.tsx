@@ -90,20 +90,22 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   {article.gallery.map((photo, i) => (
                     <div
                       key={i}
-                      className={`relative overflow-hidden rounded-2xl border border-slate-200 shadow-md group ${
+                      className={`relative overflow-hidden bg-slate-100 rounded-2xl border border-slate-200 shadow-md group ${
                         article.gallery.length === 1
-                          ? "aspect-[3/4]"
-                          : i === 0
-                            ? "md:col-span-2 aspect-[16/9]"
-                            : "aspect-[4/3]"
+                          ? "aspect-[4/3]"
+                          : article.gallery.length % 2 === 0
+                            ? "aspect-[4/3]"
+                            : i === 0
+                              ? "md:col-span-2 aspect-[16/9]"
+                              : "aspect-[4/3]"
                       }`}
                     >
                       <Image
                         src={photo.src}
                         alt={photo.alt}
                         fill
-                        className="object-cover object-[50%_25%] group-hover:scale-105 transition-transform duration-700"
-                        sizes={article.gallery.length === 1 ? "100vw" : i === 0 ? "100vw" : "50vw"}
+                        className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                        sizes={article.gallery.length === 1 ? "100vw" : (article.gallery.length % 2 !== 0 && i === 0) ? "100vw" : "50vw"}
                       />
                     </div>
                   ))}
