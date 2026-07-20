@@ -37,7 +37,7 @@ export default function NoticiasPage() {
               >
                 <article className="bg-white rounded-2xl overflow-hidden shadow-lg shadow-slate-200/50 border border-slate-100 flex flex-col hover:-translate-y-2 transition-transform duration-300 h-full">
                   {/* Imagem com aspect ratio padronizado */}
-                  <div className="relative w-full aspect-[16/10] overflow-hidden">
+                  <div className="relative w-full aspect-square overflow-hidden bg-slate-100">
                     <Image
                       src={article.coverImage}
                       alt={article.title}
