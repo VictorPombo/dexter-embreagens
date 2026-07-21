@@ -20,9 +20,6 @@ export default function CatalogosPage() {
           <h1 className="text-4xl md:text-6xl font-condensed font-bold uppercase text-white mb-4 drop-shadow-md">
             Nossos <span className="text-dexter-red">Catálogos</span>
           </h1>
-          <p className="text-slate-200 text-lg max-w-2xl drop-shadow-md">
-            Consulte aplicações por marca, modelo e código, ou baixe nosso catálogo completo de produtos.
-          </p>
         </Container>
       </section>
 
