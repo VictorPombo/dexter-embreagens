@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function ServicosPage() {
   const servico = SERVICES[0]; // Remanufatura
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "551119169977";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511919169977";
   const waLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá, gostaria de saber sobre o serviço de remanufatura.")}`;
 
   return (

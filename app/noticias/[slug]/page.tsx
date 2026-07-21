@@ -28,7 +28,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const article = getArticleBySlug(slug);
   if (!article) notFound();
 
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "551119169977";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511919169977";
 
   return (
     <>

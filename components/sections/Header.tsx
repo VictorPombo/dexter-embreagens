@@ -8,7 +8,7 @@ import Link from "next/link";
 import { PRODUCTS } from "@/lib/products";
 
 export function Header() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "551119169977";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511919169977";
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileSubOpen, setMobileSubOpen] = useState<string | null>(null);
 
