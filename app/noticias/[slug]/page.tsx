@@ -90,7 +90,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   {article.gallery.map((photo, i) => (
                     <div
                       key={i}
-                      className="relative aspect-square overflow-hidden rounded-2xl border border-slate-200 shadow-md group"
+                      className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-slate-200 shadow-md group"
                     >
                       <Image
                         src={photo.src}
