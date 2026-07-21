@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 
 export function FloatingWhatsApp() {
   const [isVisible, setIsVisible] = useState(false);
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511919169977";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "551119169977";
 
   useEffect(() => {
     const handleScroll = () => {

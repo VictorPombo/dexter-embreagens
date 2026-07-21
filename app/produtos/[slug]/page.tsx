@@ -29,7 +29,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const product = getProductBySlug(slug);
   if (!product) notFound();
 
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511919169977";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "551119169977";
   const waLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(`Olá, gostaria de orçar: ${product.nome}`)}`;
 
   return (

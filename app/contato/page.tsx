@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 export default function ContatoPage() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511919169977";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "551119169977";
   const waLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent("Olá, gostaria de mais informações.")}`;
   const uberLink = "https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[latitude]=-23.6062118&dropoff[longitude]=-46.5413159&dropoff[nickname]=Dexter%20Embreagens&dropoff[formatted_address]=Rua%20Flor%20da%20Lua%2C%2030%20-%20Altos%20da%20Vila%20Prudente%2C%20S%C3%A3o%20Paulo%2FSP";
 
