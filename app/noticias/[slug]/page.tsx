@@ -86,20 +86,26 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                 <h2 className="text-2xl font-condensed font-bold uppercase text-slate-900 mb-8">
                   Galeria de <span className="text-dexter-red">Fotos</span>
                 </h2>
-                <div className="columns-1 md:columns-2 gap-4 space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   {article.gallery.map((photo, i) => (
                     <div
                       key={i}
-                      className="relative overflow-hidden rounded-2xl border border-slate-200 shadow-md group break-inside-avoid"
+                      className="relative aspect-square overflow-hidden rounded-2xl border border-slate-200 shadow-md group bg-slate-900"
                     >
+                      {/* Fundo Desfocado (Preenche o espaço vazio com as cores da foto) */}
+                      <Image
+                        src={photo.src}
+                        alt=""
+                        fill
+                        className="object-cover blur-xl opacity-50 scale-110"
+                      />
+                      {/* Imagem Principal Contida (Produto 100% visível, sem cortes) */}
                       <Image
                         src={photo.src}
                         alt={photo.alt}
-                        width={0}
-                        height={0}
+                        fill
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        style={{ width: '100%', height: 'auto' }}
-                        className="group-hover:scale-105 transition-transform duration-700 block"
+                        className="object-contain p-2 group-hover:scale-105 transition-transform duration-700 relative z-10"
                       />
                     </div>
                   ))}
