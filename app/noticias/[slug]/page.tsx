@@ -90,22 +90,14 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
                   {article.gallery.map((photo, i) => (
                     <div
                       key={i}
-                      className="relative aspect-square overflow-hidden rounded-2xl border border-slate-200 shadow-md group bg-slate-900"
+                      className="relative aspect-[3/4] overflow-hidden rounded-2xl border border-slate-200 shadow-md group"
                     >
-                      {/* Fundo Desfocado (Preenche o espaço vazio com as cores da foto) */}
-                      <Image
-                        src={photo.src}
-                        alt=""
-                        fill
-                        className="object-cover blur-xl opacity-50 scale-110"
-                      />
-                      {/* Imagem Principal Contida (Produto 100% visível, sem cortes) */}
                       <Image
                         src={photo.src}
                         alt={photo.alt}
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-contain p-2 group-hover:scale-105 transition-transform duration-700 relative z-10"
+                        className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
                       />
                     </div>
                   ))}
