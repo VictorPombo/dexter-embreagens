@@ -4,7 +4,7 @@ import { Users, ArrowRight } from "lucide-react";
 import Image from "next/image";
 
 export function B2B() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511999999999";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511919169977";
   const waLink = `https://wa.me/${whatsappNumber}?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20sobre%20condi%C3%A7%C3%B5es%20para%20oficinas%20e%20frotas.`;
 
   return (

@@ -36,7 +36,7 @@ const DIAGNOSTICS = [
 ];
 
 export function Diagnosis() {
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511999999999";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511919169977";
 
   return (
     <section id="diagnostico" className="py-24 bg-[#E2231A] relative overflow-hidden">

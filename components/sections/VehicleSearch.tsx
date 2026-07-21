@@ -120,7 +120,7 @@ const VEICULOS = [
 export function VehicleSearch() {
   const [searchTerm, setSearchTerm] = useState("");
   const [results, setResults] = useState(VEICULOS);
-  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511999999999";
+  const whatsappNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "5511919169977";
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const term = e.target.value.toLowerCase();
@@ -139,7 +139,7 @@ export function VehicleSearch() {
 
   const getWaLink = (peca: string, modelo: string, codigo: string) => {
     const text = `Ol%C3%A1%2C%20gostaria%20de%20or%C3%A7ar%20a%20pe%C3%A7a%20*${peca}*%20(C%C3%B3d:%20${codigo})%20para%20o%20ve%C3%ADculo%20*${modelo}*.`;
-    return `https://wa.me/${whatsappNumber}?text=${text}`;
+    return `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${text}`;
   };
 
   return (
